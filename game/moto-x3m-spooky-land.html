@@ -357,9 +357,12 @@
                       <li class="nav-item">
                           <a href="../skill/index.html" class="nav-link">Skill</a>
                       </li>
-                      <li class="nav-item">
-                          <a href="../sport/index.html" class="nav-link">Sport</a>
-                      </li>
+                       <li class="nav-item">
+                        <a href="../sport/index.html" class="nav-link">Sport</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../search-bar/index.html" class="nav-link">Search Bar 🔎</a>
+                    </li> 
                   </ul>
               </div>
           </div>
@@ -507,7 +510,7 @@
                          <div class="col-lg-4 col-md-6 col-sm-12">
                              <div class="single-footer">
                                 <h3>About us</h3>
-                <p style="color:white;"> <strong>Pizza Edition</strong> is your go-to destination for <strong>Unblocked Games Premium</strong> designed specifically for school students. At Faf Games, we are passionate about providing a safe and enjoyable gaming experience that enhances your learning and relaxation time. Our wide selection ensures that every game you play is of the highest quality, free from restrictions, and full of educational benefits. Join our community today and explore a world of fun and learning with<strong> <a href="https://pizza-editions.github.io/"> Pizza Edition Games</a></strong>!</p>
+                <p style="color:white;"> <strong>Pizza Edition</strong> is your go-to destination for <strong>Unblocked Games Premium</strong> designed specifically for school students. At Pizza Edition , we are passionate about providing a safe and enjoyable gaming experience that enhances your learning and relaxation time. Our wide selection ensures that every game you play is of the highest quality, free from restrictions, and full of educational benefits. Join our community today and explore a world of fun and learning with<strong> <a href="https://pizza-editions.github.io/"> Pizza Edition Games</a></strong>!</p>
                         </div>
                          </div>
                          <div class="col-lg-5 col-md-6 col-sm-12">
@@ -624,5 +627,48 @@
                  }
                  };
         </script>
+<style>
+        #scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffec21;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+#scrollToTop:hover {
+    background-color: #e0c600;
+}
+    </style>
+  <script>
+   // Function to show the scroll-to-top button when scrolling down
+window.onscroll = function () {
+    let scrollToTopButton = document.getElementById("scrollToTop");
+
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopButton.style.display = "block"; // Show the button when scrolled down
+    } else {
+        scrollToTopButton.style.display = "none"; // Hide the button when at the top
+    }
+};
+// Function to scroll the page to the top
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll to top
+    });
+}
+  </script> 
+   <!-- Scroll to top arrow -->
+<div id="scrollToTop" onclick="scrollToTop()" style="display: none;">
+    ↑
+</div>
 </body>
 </html>

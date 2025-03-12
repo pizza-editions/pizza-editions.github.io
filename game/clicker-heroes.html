@@ -212,5 +212,48 @@
      </head>
     <body>
         <iframe id="iframehtml5" width="100%" height="100%" src="https://clickerheroesunblocked.github.io/" frameborder="0" border="0" scrolling="no" class="iframe-default " allowfullscreen></iframe>
-    </body>
+    <style>
+        #scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffec21;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+#scrollToTop:hover {
+    background-color: #e0c600;
+}
+    </style>
+  <script>
+   // Function to show the scroll-to-top button when scrolling down
+window.onscroll = function () {
+    let scrollToTopButton = document.getElementById("scrollToTop");
+
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopButton.style.display = "block"; // Show the button when scrolled down
+    } else {
+        scrollToTopButton.style.display = "none"; // Hide the button when at the top
+    }
+};
+// Function to scroll the page to the top
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll to top
+    });
+}
+  </script> 
+   <!-- Scroll to top arrow -->
+<div id="scrollToTop" onclick="scrollToTop()" style="display: none;">
+    ↑
+</div>
+</body>
     </html>
