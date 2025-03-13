@@ -1326,43 +1326,41 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #ffec21;
-    color: white;
-    border: none;
+    display: none;
+    background-color: #e0c600;
+    color: #fff;
     padding: 10px 15px;
-    font-size: 24px;
     border-radius: 5px;
     cursor: pointer;
-    display: none; /* Initially hidden */
-    transition: opacity 0.3s ease;
+    z-index: 9999; /* Ensure it's always on top */
 }
 
 #scrollToTop:hover {
-    background-color: #e0c600;
+    background-color: #ffe100;
 }
     </style>
   <script>
-   // Function to show the scroll-to-top button when scrolling down
-window.onscroll = function () {
-    let scrollToTopButton = document.getElementById("scrollToTop");
-
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        scrollToTopButton.style.display = "block"; // Show the button when scrolled down
-    } else {
-        scrollToTopButton.style.display = "none"; // Hide the button when at the top
-    }
-};
-// Function to scroll the page to the top
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // Smooth scroll to top
+    window.addEventListener("scroll", function () {
+        let scrollToTopButton = document.getElementById("scrollToTop");
+    
+        if (window.scrollY > 100) {
+            scrollToTopButton.style.display = "block"; // Show button when scrolled
+        } else {
+            scrollToTopButton.style.display = "none"; // Hide button at top
+        }
     });
-}
-  </script> 
+    
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+    </script>
    <!-- Scroll to top arrow -->
 <div id="scrollToTop" onclick="scrollToTop()" style="display: none;">
-    ↑
+        <img src="../arrow.png" alt="" style="width: 2.292vw; height: auto;">
+
 </div>
 </body>
    <script>
