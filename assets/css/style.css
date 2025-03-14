@@ -1543,7 +1543,7 @@ span.is-active {
     font-size: 14px;
 }
 
-.game-price p.free {
+.game-price p.unchained  {
     color: #2bd964
 }
 
@@ -2654,7 +2654,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .custom-checkbox .checkbox:before {
     position: absolute;
     content: "\f00c";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 unchained ";
     font-weight: 900;
     color:#ffec21;
     font-size: 13px;
