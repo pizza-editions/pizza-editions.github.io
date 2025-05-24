@@ -1,0 +1,15 @@
+# Allow all web crawlers to access all content
+User-agent: *
+Allow: /
+
+# Crawl delay (optional - adjust as needed)
+Crawl-delay: 1
+
+# Common directories to disallow (uncomment if applicable)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /.git/
+
+# Sitemap location (update this path if you have a sitemap)
+Sitemap: https://pizza-editions.github.io/sitemap.xml
