@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="publisher" content="Rehan Developer">
+    <meta name="copyright" content="Rehan Developer">
+    <link rel="icon" type="image/x-icon" href="/images/icon/logo.webp">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Play Bob the Robber 2: Free Online Game | Pizza Edition</title>
+    <meta name="robots" content="index,follow" />
+    <meta name="description"
+        content="Play Bob the Robber 2: Pizza Edition! Help Bob the Robber in a new series of heists. Avoid guards & security in this free online puzzle game.">
+    <link rel="canonical" href="https://pizza-editions.github.io/game/bob-the-robber-2.html">
+    <style type="text/css">
+        .report-modal {
+            display: none;
+            position: fixed;
+            z-index: 20;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .report-modal-content {
+            background-color: #fefefe;
+            color: #000;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            max-width: 320px;
+        }
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .report-label {
+            padding: 0 10px;
+            margin-right: 5px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        /* Modern Gaming Site CSS - SEO Optimized */
+        :root {
+            --primary-gold: #f0d210;
+            --primary-dark: #000000;
+            --secondary-dark: #070707;
+            --accent-blue: #06172d;
+            --text-light: #e94560;
+            --bg-card: rgba(255, 255, 255, 0.05);
+            --border-radius: 12px;
+            --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.3);
+            --gradient-accent: linear-gradient(135deg, var(--primary-gold), #ffd700);
+        }
+
+        .game-info-container {
+            background: var(--primary-dark);
+            border-radius: var(--border-radius);
+            padding: 0;
+            margin: 20px 0;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid rgba(240, 210, 16, 0.2);
+            overflow: hidden;
+        }
+
+        .game-header {
+            background: linear-gradient(135deg, var(--secondary-dark), var(--accent-blue));
+            padding: 24px;
+            border-bottom: 2px solid var(--primary-gold);
+        }
+
+        .game-title {
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 0 0 12px 0;
+            line-height: 1.2;
+        }
+
+        .game-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            background: var(--bg-card);
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(240, 210, 16, 0.3);
+            font-size: 0.9rem;
+            color: #ffffff;
+        }
+
+        .meta-label {
+            font-weight: 600;
+            color: var(--primary-gold);
+            margin-right: 6px;
+        }
+
+        .game-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .tag {
+            background: var(--primary-gold);
+            color: var(--primary-dark);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(240, 210, 16, 0.4);
+        }
+
+        .game-content {
+            padding: 24px;
+        }
+
+        .content-section {
+            margin-bottom: 32px;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-gold);
+            margin: 0 0 16px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+
+        .content-text {
+            color: #ffffff;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(240, 210, 16, 0.2);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--primary-gold);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(240, 210, 16, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .feature-title {
+            color: var(--primary-gold);
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .controls-section {
+            background: var(--bg-card);
+            border: 2px solid var(--primary-gold);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .control-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-gold);
+        }
+
+        .control-key {
+            background: var(--primary-gold);
+            color: var(--primary-dark);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-weight: 700;
+            margin-right: 16px;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .control-description {
+            color: #ffffff;
+            flex: 1;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 32px 0;
+            padding: 24px;
+            background: var(--gradient-accent);
+            border-radius: var(--border-radius);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-dark);
+            color: var(--primary-gold);
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-gold);
+        }
+
+        .cta-button:hover {
+            background: var(--primary-gold);
+            color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .faq-section {
+            margin-top: 32px;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid rgba(240, 210, 16, 0.2);
+            border-radius: var(--border-radius);
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--primary-gold);
+        }
+
+        .faq-question {
+            background: rgba(240, 210, 16, 0.1);
+            padding: 16px 20px;
+            color: var(--primary-gold);
+            font-weight: 600;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            padding: 16px 20px;
+            color: #ffffff;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .game-title {
+                font-size: 1.6rem;
+            }
+
+            .game-meta {
+                flex-direction: column;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .control-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+            }
+        }
+
+        /* Animation for enhanced UX */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content-section {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* SEO-friendly structured content */
+        .game-rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .stars {
+            color: var(--primary-gold);
+            font-size: 1.2rem;
+        }
+
+        .rating-text {
+            color: #ffffff;
+            font-size: 0.9rem;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery-comments.css" />
+    <link rel="stylesheet" type="text/css" href="../css/user.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <!-- Font Awesome icons (free version)-->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BEKSMBRW6M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BEKSMBRW6M');
+    </script>
+    <!--end-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8167890867484030"
+        crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body>
+
+    <!-- Add a container for particles -->
+    <div id="particles-js"></div>
+
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark top-nav" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand js-scroll-trigger" href="/">
+                <!-- <img src="#" width="70" height="35" class="" alt=" logo"> -->
+                <strong><img src="/images/icon/logo.webp" alt="Pizza Edition" style="width: 3.802vw; height: auto;"> THE
+                    <span class="highlight">PIZZA</span> EDITION</strong>
+            </a>
+
+
+            <div class="navbar-collapse collapse" id="nav-menu">
+
+
+                <ul class="navbar-nav">
+
+
+                    <li class="nav-item "><a class="nav-link " href="/category/all.html"><img
+                                src="/images/icon/category.png" alt="Pizza Edition All Categories"
+                                style="width: 1.802vw; height: auto;"> All Categories</a></li>
+                    <li class="nav-item "><a class="nav-link " href="/all-games.html"><img
+                                src="/images/icon/whitegame.png" alt="Pizza Edition All Games"
+                                style="width: 1.802vw; height: auto;"> Games</a></li>
+                    <li class="nav-item "><a class="nav-link " href="/apps/page-1.html"><img
+                                src="/images/icon/whitenblocks.png" alt="Pizza Edition Apps"
+                                style="width: 1.802vw; height: auto;"> Apps</a></li>
+
+                </ul>
+                <div class="search-container">
+                    <input type="text" id="gameSearch" placeholder="Search for a game..." oninput="searchGames()">
+                    <div id="gameList"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+
+
+
+        <div class="row">
+
+            <div class="banner-ad-wrapper">
+                <div class="banner-ad-content" style="padding: 20px 0; text-align: center;">
+
+
+                </div>
+            </div> <br />
+
+
+            <div class="col-md-9">
+                <div class="game-container">
+                    <div class="game-content" data-id="169">
+                        <div id="allow_mobile_version"></div>
+                        <!-- 
+                <div id="mobile-play" style="display: none;">
+                  <div class="mobile-thumb-play">
+                    <img src="#">
+                  </div>
+                  <div id="mobile-play-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </div>
+                </div> -->
+
+
+
+                        <div class="game-iframe-container" id="game-player">
+                            <div id="mobile-back-button" draggable="true">
+                                <i class="bi bi-x-circle-fill"></i>
+                            </div>
+                            <iframe class="game-iframe" id="game-area" src="https://bobtherobberunblocked.github.io/2/"
+                                width="480" height="800" scrolling="none" frameborder="0" allowfullscreen=""
+                                sandbox="allow-scripts allow-same-origin"></iframe>
+
+                        </div>
+                    </div>
+
+
+                    <div class="game-info">
+                        <div class="header-left">
+                            <h1 class="single-title">Play Bob the Robber 2</h1>
+
+
+                        </div>
+                        <div class="header-right">
+
+
+                            <div class="b-action2">
+
+                                <a href="#" onclick="open_fullscreen()" class="btn btn-capsule"><i
+                                        class="bi bi-arrows-fullscreen b-icon"></i>Fullscreen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end col-9 -->
+
+
+
+
+        </div><br><br>
+
+        <div class="game-info-container">
+            <!-- Game Header with Meta Information -->
+            <div class="game-header">
+                <h2 class="game-title">Play Bob the Robber 2 Online Free - Stealth Adventure Game</h2>
+                <div class="game-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Developer:</span>
+                        <span>Kizi Games</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Rating:</span>
+                        <div class="game-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">(4.6/5)</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Released:</span>
+                        <span>March 2014</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Platform:</span>
+                        <span>Browser (desktop, mobile, tablet)</span>
+                    </div>
+                </div>
+
+                <div class="game-tags">
+                    <span class="tag">Adventure</span>
+                    <span class="tag">Stealth</span>
+                    <span class="tag">Puzzle</span>
+                    <span class="tag">Action</span>
+                    <span class="tag">Strategy</span>
+                    <span class="tag">Mission</span>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="game-content">
+                <!-- Controls Section - First -->
+                <div class="content-section">
+                    <h2 class="section-title">How to Play Bob the Robber 2 - Game Controls</h2>
+                    <div class="controls-section">
+                        <div class="control-item">
+                            <div class="control-key">Arrow Keys</div>
+                            <div class="control-description">Move Bob around each level and navigate through buildings
+                            </div>
+                        </div>
+                        <div class="control-item">
+                            <div class="control-key">WASD</div>
+                            <div class="control-description">Alternative movement controls for Bob the robber</div>
+                        </div>
+                        <div class="control-item">
+                            <div class="control-key">UP / W</div>
+                            <div class="control-description">Interact with objects, climb ladders, pick locks, hide in
+                                shadows</div>
+                        </div>
+                        <div class="control-item">
+                            <div class="control-key">SPACE</div>
+                            <div class="control-description">Knock out guards when they're not looking</div>
+                        </div>
+                        <div class="control-item">
+                            <div class="control-key">Mouse</div>
+                            <div class="control-description">Select tools and interact with security systems</div>
+                        </div>
+                    </div>
+                    <p class="content-text">
+                        <strong>Quick Start:</strong> Use stealth to avoid detection! Hide in shadows, time your
+                        movements carefully, and pick locks to steal treasures while avoiding security cameras and
+                        guards.
+                    </p>
+                </div>
+
+                <!-- Game Description -->
+                <div class="content-section">
+                    <h2 class="section-title">Play Bob the Robber 2 Online Free</h2>
+                    <p class="content-text">
+                        <strong>Bob the Robber 2</strong> takes the bob the robber adventure to new levels with enhanced
+                        gameplay features. Play bob the robber 2 free online and experience the best stealth game where
+                        bob the robber uses advanced tools to pick locks and complete challenging missions. This free
+                        online game delivers exciting bob the robber 2 gameplay with no download required.
+                    </p>
+                    <p class="content-text">
+                        Bob the robber 2 free online game features improved security systems where players must pick
+                        their way through complex levels. Play bob the robber 2 and master the art of stealth as bob the
+                        robber navigates dangerous missions to help those in need. For more games visit <a href="https://pizza-editions.github.io/">Pizza Edition</a>.
+                    </p>
+
+                    <div class="cta-section">
+                        <a href="#" class="cta-button">
+                            🎮 Play Bob the Robber 2 Free Online Now - No Download!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <br>
+        <!-- Popular games section -->
+
+        <br><br>
+
+
+
+
+
+        <!-- Popular games section -->
+
+        <h3 class="section-title">Popular games</h3>
+        <div class="row grid-container">
+
+
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/football-masters.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/football-masters.png" class="lazyload"
+                                    alt="Football Masters"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/g-switch-3.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/g-switch-3.png" class="lazyload"
+                                    alt="G Switch 3"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/top-speed-3d.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/top-speed-3d.png" class="lazyload"
+                                    alt="Top Speed 3d"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/swingo.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/swingo.png" class="lazyload" alt="Swingo">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/gold-digger-frvr.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/gold-digger-frvr.png" class="lazyload"
+                                    alt="Gold Digger Frvr"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/idle-digging-tycoon.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/idle-digging-tycoon.png" class="lazyload"
+                                    alt="Idle Digging Tycoon"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/rocket-soccer-derby.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/rocket-soccer-derby.png" class="lazyload"
+                                    alt="Rocket Soccer Derby"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/stickman-climb-2.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/stickman-climb-2.png" class="lazyload"
+                                    alt="Stickman Climb 2"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/merge-round-racers.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/merge-round-racers.png" class="lazyload"
+                                    alt="Merge Round Racers"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/among-us.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/among-us.png" class="lazyload" alt="Among Us">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/gobble.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/gobble.png" class="lazyload" alt="Gobble">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/blumgi-slime.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/blumgi-slime.png" class="lazyload"
+                                    alt="Blumgi Slime"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/moto-x3m.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/moto-x3m.png" class="lazyload" alt="Moto X3m">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/moto-x3m-winter.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/moto-x3m-winter.png" class="lazyload"
+                                    alt="Moto X3m Winter">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/eugenes-life.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/eugenes-life.png" class="lazyload"
+                                    alt="Eugenes Life"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/top-speed-racing-3d.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/top-speed-racing-3d.png" class="lazyload"
+                                    alt="Top Speed Racing 3d"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/blumgi-rocket.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/blumgi-rocket.png" class="lazyload"
+                                    alt="Blumgi Rocket">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/moto-road-rash-3d.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/moto-road-rash-3d.png" class="lazyload"
+                                    alt="Moto Road Rash 3D"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/paper-io-2.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/paper-io-2.png" class="lazyload"
+                                    alt="Paper Io 2"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/stickman-hook.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/stickman-hook.png" class="lazyload"
+                                    alt="Stickman Hook">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/cluster-rush.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/cluster-rush.png" class="lazyload"
+                                    alt="Cluster Rush"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/slope.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/slope.png" class="lazyload" alt="Slope"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/sausage-flip.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/sausage-flip.png" class="lazyload"
+                                    alt="Sausage Flip"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/pop-it-master.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/pop-it-master.png" class="lazyload"
+                                    alt="Pop It Master">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/cookie-clicker.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/cookie-clicker.png" class="lazyload"
+                                    alt="Cookie Clicker">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/merge-cyber-racers.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/merge-cyber-racers.png" class="lazyload"
+                                    alt="Merge Cyber Racers"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/temple-of-boom.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/temple-of-boom.png" class="lazyload"
+                                    alt="Temple Of Boom">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/masked-forces.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/masked-forces.png" class="lazyload"
+                                    alt="Masked Forces">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/battle-wheels.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/battle-wheels.png" class="lazyload"
+                                    alt="Battle Wheels">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/who-is.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/who-is.png" class="lazyload" alt="Who Is">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/city-car-driving-stunt-master.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/city-car-driving-stunt-master.png"
+                                    class="lazyload" alt="City Car Driving: Stunt Master"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/the-impossible-quiz.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/the-impossible-quiz.png" class="lazyload"
+                                    alt="The Impossible Quiz"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/idle-ants.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/idle-ants.png" class="lazyload"
+                                    alt="Idle Ants"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/stacktris.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/stacktris.png" class="lazyload"
+                                    alt="Stacktris"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/soccer-skills-champions-league.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/soccer-skills-champions-league.png"
+                                    class="lazyload" alt="Soccer Skills Champions League"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/blumgi-ball.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/blumgi-ball.png" class="lazyload"
+                                    alt="Blumgi Ball"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/murder.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/murder.png" class="lazyload" alt="Murder">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/raft-wars.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/raft-wars.png" class="lazyload"
+                                    alt="Raft Wars"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/soccer-skills-world-cup.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/soccer-skills-world-cup.png" class="lazyload"
+                                    alt="Soccer Skills World Cup"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/run-3-editor.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/run-3-editor.png" class="lazyload"
+                                    alt="Run 3 Editor"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/stick-defenders.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/stick-defenders.png" class="lazyload"
+                                    alt="Stick Defenders">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/getaway-shootout.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/getaway-shootout.png" class="lazyload"
+                                    alt="Getaway Shootout"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/stickman-bike.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/stickman-bike.png" class="lazyload"
+                                    alt="Stickman Bike">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/retro-bowl.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/retro-bowl.png" class="lazyload"
+                                    alt="Retro Bowl"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/water-color-sort.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/water-color-sort.png" class="lazyload"
+                                    alt="Water Color Sort"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/crazy-cars.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/crazy-cars.png" class="lazyload"
+                                    alt="Crazy Cars"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/super-mario-bros.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/super-mario-bros.png" class="lazyload"
+                                    alt="Super Mario Bros"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/subway-surfers-newyork.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/subway-surfers-newyork.png" class="lazyload"
+                                    alt="Subway Surfers Newyork"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/master-chess.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/master-chess.png" class="lazyload"
+                                    alt="Master Chess"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/escaping-the-prison.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/escaping-the-prison.png" class="lazyload"
+                                    alt="Escaping The Prison"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/stick-merge.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/stick-merge.png" class="lazyload"
+                                    alt="Stick Merge"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/bitlife.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/bitlife.png" class="lazyload" alt="Bitlife">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/tiny-fishing.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/tiny-fishing.png" class="lazyload"
+                                    alt="Tiny Fishing"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/moto-x3m-2.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/moto-x3m-2.png" class="lazyload"
+                                    alt="Moto X3m 2"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/jumping-shell.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/jumping-shell.png" class="lazyload"
+                                    alt="Jumping Shell">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/basketball-stars.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/basketball-stars.png" class="lazyload"
+                                    alt="Basketball Stars"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/temple-run-2.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/temple-run-2.png" class="lazyload"
+                                    alt="Temple Run 2"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/stack-ball.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/stack-ball.png" class="lazyload"
+                                    alt="Stack Ball"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/stack.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/stack.png" class="lazyload" alt="Stack"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 grid-3">
+                <a href="/game/rooftop-snipers.html">
+                    <div class="game-item">
+                        <div class="list-game">
+                            <div class="list-thumbnail"><img src="/media/rooftop-snipers.png" class="lazyload"
+                                    alt="Rooftop Snipers">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div><br><br><br><br><br>
+
+            <div class="game-info-container">
+                <!-- Game Features -->
+                <div class="content-section"><br><br>
+                    <h2 class="section-title">Bob the Robber 2 Game Features</h2>
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🕵️</div>
+                            <div class="feature-title">Advanced Bob the Robber 2 Gameplay</div>
+                            <p class="content-text">Experience enhanced bob the robber 2 online gameplay with complex
+                                security systems. Pick locks strategically while bob the robber avoids detection in this
+                                free online adventure.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔧</div>
+                            <div class="feature-title">New Pick Tools & Game Features</div>
+                            <p class="content-text">Bob the robber 2 free game includes advanced lock pick tools and
+                                security bypass features. Play bob the robber 2 online and unlock new gameplay
+                                abilities.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎯</div>
+                            <div class="feature-title">Challenging Bob the Robber Missions</div>
+                            <p class="content-text">Play bob the robber 2 free and complete diverse missions where bob
+                                the
+                                robber must pick his way through increasingly difficult online game levels.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📱</div>
+                            <div class="feature-title">Free Online Bob the Robber 2 Game</div>
+                            <p class="content-text">Play bob the robber 2 online free on any device. This bob the robber
+                                2
+                                free online game features smooth gameplay and mobile-optimized controls.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy Tips -->
+                <div class="content-section">
+                    <h2 class="section-title">Bob the Robber 2 Gameplay Tips & Strategy</h2>
+                    <p class="content-text">
+                        <strong>Master the Pick System:</strong> Bob the robber 2 online features an improved lock pick
+                        system. When you play bob the robber 2, time your pick movements carefully to successfully
+                        bypass
+                        security in this free online game. Bob the robber 2 gameplay requires precision when you pick
+                        locks
+                        to avoid triggering alarms.
+                    </p>
+                    <p class="content-text">
+                        <strong>Bob the Robber 2 Free Strategy:</strong> Study guard patterns before you play bob the
+                        robber
+                        2 online. This bob the robber 2 free game rewards careful planning - pick your moments wisely
+                        and
+                        use bob the robber's stealth abilities to complete each online game level successfully.
+                    </p>
+                    <p class="content-text">
+                        <strong>Advanced Bob the Robber 2 Features:</strong> Invest in better pick tools between
+                        missions
+                        when you play bob the robber 2 free online. Enhanced lock pick feature upgrades and improved
+                        gameplay mechanics help tackle challenging bob the robber 2 online levels in this exciting free
+                        game.
+                    </p>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="content-section">
+                    <h2 class="section-title">Bob the Robber 2 - Frequently Asked Questions</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question">How to play bob the robber 2 free online?</h3>
+                            <p class="faq-answer">Play bob the robber 2 completely free online at Pizza Edition. This
+                                bob
+                                the robber 2 online game requires no downloads or registration - just start the free
+                                game
+                                and help bob the robber complete his missions by using pick tools and stealth gameplay.
+                            </p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question">What makes bob the robber 2 gameplay special?</h3>
+                            <p class="faq-answer">Bob the robber 2 free online game features enhanced gameplay compared
+                                to
+                                the original bob the robber. Play bob the robber 2 and experience new pick mechanics,
+                                advanced security systems, and challenging online game levels with improved feature
+                                sets.
+                            </p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question">Can I play bob the robber 2 online free on mobile?</h3>
+                            <p class="faq-answer">Yes! Bob the robber 2 online works perfectly on mobile devices. This
+                                free
+                                online game features touch-optimized controls so you can play bob the robber 2 free on
+                                smartphones and tablets with smooth gameplay.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question">How do I pick locks in bob the robber 2?</h3>
+                            <p class="faq-answer">Bob the robber 2 gameplay includes an advanced pick system. When you
+                                play
+                                bob the robber 2 online, use timing and precision to pick locks successfully. This free
+                                game
+                                feature requires practice to master the bob the robber 2 lock pick mechanics.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question">Is bob the robber 2 free to play online?</h3>
+                            <p class="faq-answer">Absolutely! Play bob the robber 2 completely free online. This bob the
+                                robber 2 free game offers unlimited gameplay with all features available. No hidden
+                                costs
+                                when you play bob the robber 2 online at Pizza Edition.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end Poplular -->
+
+
+
+
+
+
+
+
+
+
+    </div> <!-- end container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br>
+    <div class="footer-copyright py-4"
+        style="background-color: rgb(0 0 0 / 40%); color: #f1f1f1; text-align: center; font-size: 14px; border-top: 2px solid #f0d210;">
+        <div class="container">
+            <div style="margin-bottom: 10px;">
+                <h3>The <span class="highlight">Pizza</span> Edition</h3>
+            </div>
+            <p style="font-size: 16px; color: #f0d210; margin-bottom: 10px;">Wants to advertise on our Website? <a
+                    href="/contact.html" style="color: #f0d210; text-decoration: underline;">Contact us!</a></p>
+            <div style="margin-bottom: 15px;">
+                <a href="/term.html" style="margin: 0 10px; color: #f1f1f1; text-decoration: none;">Term</a>
+                <a href="/dmca.html" style="margin: 0 10px; color: #f1f1f1; text-decoration: none;">DMCA</a>
+                <a href="/policy.html" style="margin: 0 10px; color: #f1f1f1; text-decoration: none;">Policy</a>
+            </div>
+            <p style="font-size: 14px; color: #f1f1f1;">© Copyrights 2025 THE-PIZZA-EDITION</p>
+        </div>
+    </div>
+
+
+
+    <!-- Include particle effect scripts -->
+    <script type="text/javascript" src="../js/particles.min.js"></script> <!-- Particle library -->
+    <!-- Particle configuration -->
+    <script type="text/javascript" src="../js/jquery-3.6.2.min.js"></script>
+
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#f0d210" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5 },
+                size: { value: 3 },
+                line_linked: { enable: true, distance: 150, color: "#f1f1f1", opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 6 }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
+                modes: { repulse: { distance: 200 }, push: { particles_nb: 4 } }
+            },
+            retina_detect: true
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -796,6 +796,18 @@
         "url": "game/maze-planet-3d.html"
     },
     {
+        "name": "Bob The Robber 2",
+        "url": "game/bob-the-robber-2.html"
+    },
+    {
+        "name": "Idle Dice",
+        "url": "game/idle-dice.html"
+    },
+    {
+        "name": "Happy Wheels",
+        "url": "game/happy-wheels.html"
+    },
+    {
         "name": "Merge Cakes",
         "url": "game/merge-cakes.html"
     },
@@ -810,6 +822,26 @@
     {
         "name": "Microwars",
         "url": "game/microwars.html"
+    },
+    {
+        "name": "Hover Racer",
+        "url": "game/hover-racer.html"
+    },
+    {
+        "name": "Moto Maniac",
+        "url": "game/moto-maniac.html"
+    },
+    {
+        "name": "Rooftop Snipers",
+        "url": "game/rooftop-snipers.html"
+    },
+    {
+        "name": "Stickman Bike",
+        "url": "game/stickman-bike.html"
+    },
+    {
+        "name": "Subway Surfers",
+        "url": "game/subway-surfers.html"
     },
     {
         "name": "Minesweeper",
