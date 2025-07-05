@@ -178,277 +178,63 @@
           }
         }
         </script>
-    <style>
-        .all-catgories-section {
-            font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
-            color: white;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        h4 {
-            margin-top: 0;
-            margin-bottom: 0;
-            font-weight: 900;
-            line-height: 1.2;
-            color: var(--bs-gray-900);
-        }
-
-        h4 {
-            font-size: 1.1rem;
-        }
-
-        a {
-            color: #f0d210;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #f0d210;
-            text-decoration: none;
-        }
-
-        img {
-            vertical-align: middle;
-        }
-
-        .container-fluid {
-            width: 100%;
-            padding-right: var(--bs-gutter-x, 1rem);
-            padding-left: var(--bs-gutter-x, 1rem);
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        @media (min-width: 576px) {
-
-            .container-sm,
-            .container {
-                max-width: 540px;
+        <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Pizza Edition Game Categories with Videos",
+    "description": "Complete collection of unblocked game categories at Pizza Edition featuring video previews and gameplay demonstrations",
+    "url": "https://pizza-editions.github.io",
+    "numberOfItems": 18,
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@type": "VideoObject",
+                "name": "3D Games Collection - Pizza Edition",
+                "url": "https://pizza-editions.github.io/category/3d.html"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "@type": "VideoObject",
+                "name": "Action Games Collection - Pizza Edition",
+                "url": "https://pizza-editions.github.io/category/action.html"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+                "@type": "VideoObject",
+                "name": "Racing Games Collection - Polytrack Pizza Edition",
+                "url": "https://pizza-editions.github.io/category/racing.html"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+                "@type": "VideoObject",
+                "name": "Sports Games Collection - Retro Bowl Pizza Edition",
+                "url": "https://pizza-editions.github.io/category/sports.html"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+                "@type": "VideoObject",
+                "name": "Puzzle Games Collection - Math Masters Pizza Edition",
+                "url": "https://pizza-editions.github.io/category/puzzle.html"
             }
         }
-
-        @media (min-width: 768px) {
-
-            .container-md,
-            .container-sm,
-            .container {
-                max-width: 720px;
-            }
-        }
-
-        @media (min-width: 992px) {
-
-            .container-lg,
-            .container-md,
-            .container-sm,
-            .container {
-                max-width: 960px;
-            }
-        }
-
-        @media (min-width: 1200px) {
-
-            .container-xl,
-            .container-lg,
-            .container-md,
-            .container-sm,
-            .container {
-                max-width: 1200px;
-            }
-        }
-
-        @media (min-width: 1400px) {
-
-            .container-xxl,
-            .container-xl,
-            .container-lg,
-            .container-md,
-            .container-sm,
-            .container {
-                max-width: 1400px;
-            }
-        }
-
-        .img-fluid {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .card {
-            border: 0;
-            border-radius: 0.75rem;
-            background-color: var(--bs-gray-200);
-            position: relative;
-        }
-
-        .card-masonry {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            grid-gap: 20px;
-            grid-auto-rows: minmax(120px, auto);
-            grid-auto-flow: dense;
-        }
-
-        .card-masonry .card {
-            border: 0;
-            border-radius: 1rem;
-            background-color: transparent;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card-masonry .card picture {
-            position: relative;
-        }
-
-        .card-masonry .card picture img {
-            position: relative;
-            z-index: 1;
-        }
-
-        .card-masonry .card picture.lazyloaded:before {
-            display: none;
-        }
-
-        .card-masonry .card picture:before {
-            position: absolute;
-            content: "";
-            inset: 0;
-            background: linear-gradient(-45deg, var(--bs-gray-200), var(--bs-body-bg));
-            background-size: 400% 400%;
-            animation: animatedBackground 1s linear infinite;
-        }
-
-        .card-masonry .card-collection {
-            grid-column-end: span 2;
-            grid-row-end: span 1;
-        }
-
-        .card-masonry .card-collection .card-collection-body {
-            background-color: var(--bs-gray-200);
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-
-        .card-masonry .card-collection .card-img {
-            flex: 0 0 auto;
-            width: 50%;
-            padding-right: 10px;
-        }
-
-        .card-masonry .card-collection .card-img img {
-            border-top-right-radius: 0 !important;
-            border-bottom-right-radius: 0 !important;
-        }
-
-        .card-masonry .card-collection .card-text {
-            padding: 10px 30px 10px 10px;
-            flex: 0 0 auto;
-            width: 50%;
-        }
-
-        .card-masonry .card-collection .card-text h4 {
-            text-transform: uppercase;
-            font-size: 0.875rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            font-weight: bold;
-            color: #1C2526;
-        }
-
-        .fs-xs {
-            font-size: 0.75rem;
-        }
-
-        .text-white-50 {
-            color: rgba(255, 255, 255, 0.5) !important;
-        }
-
-        .mt-2 {
-            margin-top: 0.5rem !important;
-        }
-
-        .rounded-3 {
-            border-radius: 0.75rem !important;
-        }
-
-        @keyframes animatedBackground {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        /* Video player styles */
-        .card-video-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            z-index: 1;
-        }
-
-        .card:hover .card-video-container {
-            opacity: 1;
-        }
-
-        .card-video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .card {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card:hover .card-img {
-            opacity: 0;
-        }
-
-        /* Lazy load styles */
-        .card {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-
-        .card.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .highlight {
-            background: linear-gradient(90deg, #f0d210, #fc5849, #f0d210);
-            background-size: 200%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: waveColor 30s infinite;
-        }
-    </style>
-
-
+    ]
+}
+</script>
  <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BEKSMBRW6M"></script>
     <script>
@@ -496,6 +282,12 @@
                     <li class="nav-item "><a class="nav-link " href="/apps/page-1.html"><img
                                 src="/images/icon/whitenblocks.png" alt="Pizza Edition Apps" style="width: 1.802vw; height: auto;">
                             Apps</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="goToRandomGame(); return false;">
+                            <img src="/images/icon/random.png" alt="Random Game" style="width: 1.802vw; height: auto;">
+                            Random Game
+                        </a>
+                    </li>
 
                 </ul>
                 <div class="search-container">
@@ -537,422 +329,902 @@
         <!-- Category section -->
         <h2
             style="text-align: center; color: white; font-family: Arial, sans-serif; font-size: 2.5rem; margin: 20px 0;">
-            <strong>ALL <span class="highlight" style="color: #f0d210;">GAMING</span> CATEGORIES</strong>
+            <strong>ALL <span class="highlight" style="color: #f0d210;">CATEGORIES</span></strong>
         </h2> <br><br>
         <div class="row grid-container" id="all-catgories-section">
 
 
 
-            <div class="layout-section">
-                <div class="container-fluid">
-                    <div class="card-masonry index-page-games-list">
-                        <a href="/category/3d.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #A8FFB0">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../images/categories-img/3d-group.jpg">
-                                        <source src="../images/category-video/3d-group.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../images/categories-img/3d-group.jpg" type="image/png"
-                                            class="rounded-3 img-fluid" srcset="../images/categories-img/3d-group.jpg">
-                                        <img data-src="../images/categories-img/3d-group.jpg" alt="CLICKER GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>3D GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-
-                        <a href="/category/action.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #D3D3D3">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../images/categories-img/action-group.jpg">
-                                        <source src="../images/category-video/action-group-landscape-611x343_30fps.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../images/categories-img/action-group.jpg" type="image/png"
-                                            class="rounded-3 img-fluid"
-                                            srcset="../images/categories-img/action-group.jpg">
-                                        <img data-src="../images/categories-img/action-group.jpg" alt="Action GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>ACTION GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-
-                        <a href="/category/adventure.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #D8B0FF">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../media/life-the-game.png">
-                                        <source
-                                            src="../images/category-video/adventure-group-landscape-611x343_30fps.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../media/life-the-game.png" type="image/png"
-                                            class="rounded-3 img-fluid" srcset="../media/life-the-game.png">
-                                        <img data-src="../media/life-the-game.png" alt="ADVENTURE GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>ADVENTURE GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-
-                        <a href="/category/car.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #ADD8E6">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../images/categories-img/car-group.jpg">
-                                        <source src="../images/category-video/car-group-611x343_30fps.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../images/categories-img/car-group.jpg" type="image/png"
-                                            class="rounded-3 img-fluid" srcset="../images/categories-img/car-group.jpg">
-                                        <img data-src="../images/categories-img/car-group.jpg" alt="CAR GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>CAR GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="/category/fighting.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #FFB6C1">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../media/rowdy-wrestling.png">
-                                        <source
-                                            src="../images/category-video/fighting-group-landscape-611x343_30fps.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../media/rowdy-wrestling.png" type="image/png"
-                                            class="rounded-3 img-fluid" srcset="../media/rowdy-wrestling.png">
-                                        <img data-src="../media/rowdy-wrestling.png" alt="FIGHTING GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>FIGHTING GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="/category/idle.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #FFEB99">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../media/idle-miner.jpg">
-                                        <source src="../images/category-video/idle-groups-611x343_30fps.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../media/idle-miner.jpg" type="image/png"
-                                            class="rounded-3 img-fluid" srcset="../media/idle-miner.jpg">
-                                        <img data-src="../media/idle-miner.jpg" alt="IDLE GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>IDLE GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-
-                        <a href="/category/moto.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #B0E0E6">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../media/moto-x3m-winter.png">
-                                        <source src="../images/category-video/moto-group.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../media/moto-x3m-winter.png" type="image/png"
-                                            class="rounded-3 img-fluid" srcset="../media/moto-x3m-winter.png">
-                                        <img data-src="../media/moto-x3m-winter.png" alt="MOTO GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>MOTO GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="/category/multiplayer.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #FFDAB9">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../media/12-minibattles.png">
-                                        <source
-                                            src="../images/category-video/multiplayer-group-landscape-611x343_30fps.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../media/12-minibattles.png" type="image/png"
-                                            class="rounded-3 img-fluid" srcset="../media/12-minibattles.png">
-                                        <img data-src="../media/12-minibattles.png" alt="MULTIPLAYER GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>MULTIPLAYER GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="/category/new.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #E6CCFF">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none" poster="../media/gobble.png">
-                                        <source
-                                            src="../images/category-video/newgames-group-landscape-611x343_30fps.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../media/gobble.png" type="image/png"
-                                            class="rounded-3 img-fluid" srcset="../media/gobble.png">
-                                        <img data-src="../media/gobble.png" alt="NEW GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>NEW GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-
-                        <a href="/category/popular.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #FF9999">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../images/categories-img/popular-group.jpg">
-                                        <source src="../images/category-video/popular-group-landscape-611x343_30fps.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../images/categories-img/popular-group.jpg"
-                                            type="image/png" class="rounded-3 img-fluid"
-                                            srcset="../images/categories-img/popular-group.jpg">
-                                        <img data-src="../images/categories-img/popular-group.jpg" alt="POPULAR GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>POPULAR GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-
-                        <a href="/category/puzzle.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #FFE4E1">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../media/brain-test-tricky-puzzles.png">
-                                        <source src="../images/category-video/puzzle-group-landscape-611x343_30fps.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../media/brain-test-tricky-puzzles.png" type="image/png"
-                                            class="rounded-3 img-fluid" srcset="../media/brain-test-tricky-puzzles.png">
-                                        <img data-src="../media/brain-test-tricky-puzzles.png" alt="PUZZLE GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>PUZZLE GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="/category/racing.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #FFCCCB">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../media/top-speed-racing-3d.png">
-                                        <source src="../images/category-video/racing-group-landscape-611x343_30fps.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../media/top-speed-racing-3d.png" type="image/png"
-                                            class="rounded-3 img-fluid" srcset="../media/top-speed-racing-3d.png">
-                                        <img data-src="../media/top-speed-racing-3d.png" alt="RACING GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>RACING GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-
-                        <a href="/category/running.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #FFD580">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../images/categories-img/running-group.jpg">
-                                        <source src="../images/category-video/running-group-landscape-611x343_30fps.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../images/categories-img/running-group.jpg"
-                                            type="image/png" class="rounded-3 img-fluid"
-                                            srcset="../images/categories-img/running-group.jpg">
-                                        <img data-src="../images/categories-img/running-group.jpg" alt="RUNNING GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>RUNNING GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="/category/shooting.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #669499">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../media/stupid-zombies.png">
-                                        <source
-                                            src="../images/category-video/shooting-group-landscape-611x343_30fps.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../media/stupid-zombies.png" type="image/png"
-                                            class="rounded-3 img-fluid" srcset="../media/stupid-zombies.png">
-                                        <img data-src="../media/stupid-zombies.png" alt="SHOOTING GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>SHOOTING GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="/category/skill.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #E0BBE4">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../media/rolly-vortex.png">
-                                        <source src="../images/category-video/skill-group-landscape-611x343_30fps.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../media/rolly-vortex.png" type="image/png"
-                                            class="rounded-3 img-fluid" srcset="../media/rolly-vortex.png">
-                                        <img data-src="../media/rolly-vortex.png" alt="SKILL GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>SKILL GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="/category/sports.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #C4F0C5">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../media/heads-arena-soccer-all-stars.png">
-                                        <source src="../images/category-video/sports-group-landscape-611x343_30fps.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../media/heads-arena-soccer-all-stars.png" type="image/png"
-                                            class="rounded-3 img-fluid"
-                                            srcset="../media/heads-arena-soccer-all-stars.png">
-                                        <img data-src="../media/heads-arena-soccer-all-stars.png" alt="SPORTS GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>SPORTS GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="/category/stickman.html" class="card card-collection visible">
-                            <div class="card-collection-body" style="background-color: #B2B2B2">
-                                <div class="card-video-container">
-                                    <video class="card-video" muted loop preload="none"
-                                        poster="../media/stick-defenders.png">
-                                        <source src="../images/category-video/stickman-group-611x343_30fps.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="card-img">
-                                    <picture>
-                                        <source data-srcset="../media/stick-defenders.png" type="image/png"
-                                            class="rounded-3 img-fluid" srcset="../media/stick-defenders.png">
-                                        <img data-src="../media/stick-defenders.png" alt="STICKMAN GAMES"
-                                            class="lazyload rounded-3 img-fluid" width="500" height="500">
-                                    </picture>
-                                </div>
-                                <div class="card-text">
-                                    <h4>STICKMAN GAMES</h4>
-                                </div>
-                            </div>
-                        </a>
-
+           <div class="layout-section">
+    <div class="container-fluid">
+        <div class="card-masonry index-page-games-list">
+            <!-- 3D Games -->
+            <a href="/category/3d.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #A8FFB0">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../images/categories-img/3d-group.jpg"
+                               title="3D Games Collection - Pizza Edition Unblocked"
+                               aria-label="Preview of 3D games available on Pizza Edition platform">
+                            <source src="../images/category-video/3d-group.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/3d-games.vtt" srclang="en" label="3D Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "3D Games Collection - Pizza Edition",
+                            "description": "Immersive 3D games collection featuring puzzles, adventures, and action games. Play unblocked 3D games at Pizza Edition with advanced graphics and engaging gameplay.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/images/categories-img/3d-group.jpg",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/3d-group.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "3D games, unblocked 3D games, pizza edition 3d, three dimensional games, 3D puzzles"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../images/categories-img/3d-group.jpg" type="image/jpeg"
+                                class="rounded-3 img-fluid" srcset="../images/categories-img/3d-group.jpg">
+                            <img data-src="../images/categories-img/3d-group.jpg" 
+                                 alt="3D Games Collection - Immersive three-dimensional gaming at Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play 3D Games - Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">3D GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">Experience immersive three-dimensional gaming with advanced graphics and engaging 3D gameplay mechanics.</p>
                     </div>
                 </div>
-            </div>
+            </a>
+
+            <!-- Action Games -->
+            <a href="/category/action.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #D3D3D3">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../images/categories-img/action-group.jpg"
+                               title="Action Games Collection - Pizza Edition Unblocked"
+                               aria-label="Preview of action-packed games available on Pizza Edition">
+                            <source src="../images/category-video/action-group-landscape-611x343_30fps.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/action-games.vtt" srclang="en" label="Action Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Action Games Collection - Pizza Edition",
+                            "description": "High-energy action games featuring combat, adventure, and thrilling challenges. Play unblocked action games at Pizza Edition with fast-paced gameplay.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/images/categories-img/action-group.jpg",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/action-group-landscape-611x343_30fps.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "action games, unblocked action games, pizza edition action, combat games, adventure action"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../images/categories-img/action-group.jpg" type="image/jpeg"
+                                class="rounded-3 img-fluid" srcset="../images/categories-img/action-group.jpg">
+                            <img data-src="../images/categories-img/action-group.jpg" 
+                                 alt="Action Games Collection - Fast-paced action gaming at Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play Action Games - Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">ACTION GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">High-energy action games featuring combat, adventure, and adrenaline-pumping challenges.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Adventure Games -->
+            <a href="/category/adventure.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #D8B0FF">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../media/life-the-game.png"
+                               title="Adventure Games Collection - Pizza Edition Unblocked"
+                               aria-label="Preview of adventure games with exploration and storytelling">
+                            <source src="../images/category-video/adventure-group-landscape-611x343_30fps.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/adventure-games.vtt" srclang="en" label="Adventure Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Adventure Games Collection - Pizza Edition",
+                            "description": "Epic adventure games featuring exploration, puzzle-solving, and immersive storylines. Play unblocked adventure games at Pizza Edition.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/media/life-the-game.png",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/adventure-group-landscape-611x343_30fps.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "adventure games, unblocked adventure games, pizza edition adventure, exploration games, story games"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../media/life-the-game.png" type="image/png"
+                                class="rounded-3 img-fluid" srcset="../media/life-the-game.png">
+                            <img data-src="../media/life-the-game.png" 
+                                 alt="Adventure Games Collection - Epic adventures and exploration at Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play Adventure Games - Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">ADVENTURE GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">Epic adventures featuring exploration, puzzle-solving, and immersive storylines for curious minds.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Car Games -->
+            <a href="/category/car.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #ADD8E6">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../images/categories-img/car-group.jpg"
+                               title="Car Games Collection - Drive Mad Pizza Edition"
+                               aria-label="Preview of car racing and driving games including Drive Mad Pizza Edition">
+                            <source src="../images/category-video/car-group-611x343_30fps.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/car-games.vtt" srclang="en" label="Car Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Car Games Collection - Drive Mad Pizza Edition",
+                            "description": "High-speed car racing and driving games including Drive Mad Pizza Edition. Play unblocked car games with realistic physics and exciting challenges.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/images/categories-img/car-group.jpg",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/car-group-611x343_30fps.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "car games, drive mad pizza edition, unblocked car games, racing games, driving games, pizza edition car"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../images/categories-img/car-group.jpg" type="image/jpeg"
+                                class="rounded-3 img-fluid" srcset="../images/categories-img/car-group.jpg">
+                            <img data-src="../images/categories-img/car-group.jpg" 
+                                 alt="Car Games Collection - High-speed racing including Drive Mad Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play Car Games - Drive Mad Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">CAR GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">High-speed car racing and driving games including Drive Mad Pizza Edition with realistic physics.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Fighting Games -->
+            <a href="/category/fighting.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #FFB6C1">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../media/rowdy-wrestling.png"
+                               title="Fighting Games Collection - Pizza Edition Unblocked"
+                               aria-label="Preview of fighting and combat games available on Pizza Edition">
+                            <source src="../images/category-video/fighting-group-landscape-611x343_30fps.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/fighting-games.vtt" srclang="en" label="Fighting Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Fighting Games Collection - Pizza Edition",
+                            "description": "Intense fighting and combat games with martial arts, wrestling, and battle challenges. Play unblocked fighting games at Pizza Edition.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/media/rowdy-wrestling.png",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/fighting-group-landscape-611x343_30fps.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "fighting games, unblocked fighting games, pizza edition fighting, combat games, martial arts games"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../media/rowdy-wrestling.png" type="image/png"
+                                class="rounded-3 img-fluid" srcset="../media/rowdy-wrestling.png">
+                            <img data-src="../media/rowdy-wrestling.png" 
+                                 alt="Fighting Games Collection - Intense combat and martial arts at Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play Fighting Games - Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">FIGHTING GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">Intense fighting and combat games featuring martial arts, wrestling, and battle challenges.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Idle Games -->
+            <a href="/category/idle.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #FFEB99">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../media/idle-miner.jpg"
+                               title="Idle Games Collection - Idle Breakout Pizza Edition"
+                               aria-label="Preview of idle and incremental games including Idle Breakout Pizza Edition">
+                            <source src="../images/category-video/idle-groups-611x343_30fps.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/idle-games.vtt" srclang="en" label="Idle Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Idle Games Collection - Idle Breakout Pizza Edition",
+                            "description": "Relaxing idle and incremental games including Idle Breakout Pizza Edition. Play unblocked idle games that progress automatically.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/media/idle-miner.jpg",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/idle-groups-611x343_30fps.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "idle games, idle breakout pizza edition, unblocked idle games, incremental games, pizza edition idle"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../media/idle-miner.jpg" type="image/jpeg"
+                                class="rounded-3 img-fluid" srcset="../media/idle-miner.jpg">
+                            <img data-src="../media/idle-miner.jpg" 
+                                 alt="Idle Games Collection - Relaxing idle gaming including Idle Breakout Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play Idle Games - Idle Breakout Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">IDLE GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">Relaxing idle and incremental games including Idle Breakout Pizza Edition that progress automatically.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Moto Games -->
+            <a href="/category/moto.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #B0E0E6">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../media/moto-x3m-winter.png"
+                               title="Moto Games Collection - Pizza Edition Unblocked"
+                               aria-label="Preview of motorcycle racing and stunt games on Pizza Edition">
+                            <source src="../images/category-video/moto-group.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/moto-games.vtt" srclang="en" label="Moto Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Moto Games Collection - Pizza Edition",
+                            "description": "Motorcycle racing and stunt games with exciting tracks and challenges. Play unblocked moto games at Pizza Edition.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/media/moto-x3m-winter.png",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/moto-group.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "moto games, unblocked moto games, pizza edition moto, motorcycle games, bike racing"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../media/moto-x3m-winter.png" type="image/png"
+                                class="rounded-3 img-fluid" srcset="../media/moto-x3m-winter.png">
+                            <img data-src="../media/moto-x3m-winter.png" 
+                                 alt="Moto Games Collection - Motorcycle racing and stunts at Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play Moto Games - Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">MOTO GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">Motorcycle racing and stunt games with exciting tracks and challenging obstacles.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Multiplayer Games -->
+            <a href="/category/multiplayer.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #FFDAB9">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../media/12-minibattles.png"
+                               title="Multiplayer Games Collection - Pizza Edition Unblocked"
+                               aria-label="Preview of multiplayer and co-op games available on Pizza Edition">
+                            <source src="../images/category-video/multiplayer-group-landscape-611x343_30fps.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/multiplayer-games.vtt" srclang="en" label="Multiplayer Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Multiplayer Games Collection - Pizza Edition",
+                            "description": "Multiplayer and co-op games for playing with friends. Enjoy competitive and cooperative gaming at Pizza Edition.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/media/12-minibattles.png",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/multiplayer-group-landscape-611x343_30fps.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "multiplayer games, unblocked multiplayer games, pizza edition multiplayer, co-op games, social games"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../media/12-minibattles.png" type="image/png"
+                                class="rounded-3 img-fluid" srcset="../media/12-minibattles.png">
+                            <img data-src="../media/12-minibattles.png" 
+                                 alt="Multiplayer Games Collection - Social gaming and co-op at Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play Multiplayer Games - Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">MULTIPLAYER GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">Multiplayer and co-op games for competitive and cooperative gaming with friends.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- New Games -->
+            <a href="/category/new.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #E6CCFF">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../media/gobble.png"
+                               title="New Games Collection - Pizza Edition Unblocked"
+                               aria-label="Preview of latest and newest games added to Pizza Edition">
+                            <source src="../images/category-video/newgames-group-landscape-611x343_30fps.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/new-games.vtt" srclang="en" label="New Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "New Games Collection - Pizza Edition",
+                            "description": "Latest and newest games added to Pizza Edition. Discover fresh gaming experiences and recently released titles.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/media/gobble.png",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/newgames-group-landscape-611x343_30fps.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "new games, latest games, unblocked new games, pizza edition new, fresh games"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../media/gobble.png" type="image/png"
+                                class="rounded-3 img-fluid" srcset="../media/gobble.png">
+                            <img data-src="../media/gobble.png" 
+                                 alt="New Games Collection - Latest releases and fresh content at Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play New Games - Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">NEW GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">Latest and newest games added to Pizza Edition with fresh gaming experiences.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Popular Games -->
+            <a href="/category/popular.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #FF9999">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../images/categories-img/popular-group.jpg"
+                               title="Popular Games Collection - Pizza Edition Unblocked"
+                               aria-label="Preview of most popular and trending games on Pizza Edition">
+                            <source src="../images/category-video/popular-group-landscape-611x343_30fps.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/popular-games.vtt" srclang="en" label="Popular Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Popular Games Collection - Pizza Edition",
+                            "description": "Most popular and trending games on Pizza Edition. Play the most loved unblocked games by our community.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/images/categories-img/popular-group.jpg",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/popular-group-landscape-611x343_30fps.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "popular games, trending games, unblocked popular games, pizza edition popular, top games"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../images/categories-img/popular-group.jpg" type="image/jpeg"
+                                class="rounded-3 img-fluid" srcset="../images/categories-img/popular-group.jpg">
+                            <img data-src="../images/categories-img/popular-group.jpg" 
+                                 alt="Popular Games Collection - Most loved and trending games at Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play Popular Games - Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">POPULAR GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">Most popular and trending games loved by our Pizza Edition community.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Puzzle Games -->
+            <a href="/category/puzzle.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #FFE4E1">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../media/brain-test-tricky-puzzles.png"
+                               title="Puzzle Games Collection - Math Masters & Pizza Edition Wordle"
+                               aria-label="Preview of educational puzzle games including Math Masters and Pizza Edition Wordle">
+                            <source src="../images/category-video/puzzle-group-landscape-611x343_30fps.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/puzzle-games.vtt" srclang="en" label="Puzzle Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Puzzle Games Collection - Math Masters Pizza Edition & Pizza Edition Wordle",
+                            "description": "Educational puzzle games including Math Masters Pizza Edition, Pizza Edition Wordle, brain teasers, and logic challenges. Perfect for learning and fun.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/media/brain-test-tricky-puzzles.png",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/puzzle-group-landscape-611x343_30fps.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "puzzle games, math masters pizza edition, pizza edition wordle, educational games, brain teasers, logic puzzles"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../media/brain-test-tricky-puzzles.png" type="image/png"
+                                class="rounded-3 img-fluid" srcset="../media/brain-test-tricky-puzzles.png">
+                            <img data-src="../media/brain-test-tricky-puzzles.png" 
+                                 alt="Puzzle Games Collection - Educational puzzles including Math Masters Pizza Edition and Pizza Edition Wordle"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play Puzzle Games - Math Masters Pizza Edition & Pizza Edition Wordle">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">PUZZLE GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">Educational puzzle games including Math Masters Pizza Edition, Pizza Edition Wordle, and brain teasers.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Racing Games -->
+            <a href="/category/racing.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #FFCCCB">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../media/top-speed-racing-3d.png"
+                               title="Racing Games Collection - Polytrack Pizza Edition"
+                               aria-label="Preview of racing games including Polytrack Pizza Edition and high-speed racing">
+                            <source src="../images/category-video/racing-group-landscape-611x343_30fps.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/racing-games.vtt" srclang="en" label="Racing Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Racing Games Collection - Polytrack Pizza Edition",
+                            "description": "High-speed racing games including Polytrack Pizza Edition, Poly Track Pizza Edition, and competitive racing challenges with track building features.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/media/top-speed-racing-3d.png",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/racing-group-landscape-611x343_30fps.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "racing games, polytrack pizza edition, poly track pizza edition, unblocked racing games, track building, speed racing"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../media/top-speed-racing-3d.png" type="image/png"
+                                class="rounded-3 img-fluid" srcset="../media/top-speed-racing-3d.png">
+                            <img data-src="../media/top-speed-racing-3d.png" 
+                                 alt="Racing Games Collection - High-speed racing including Polytrack Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play Racing Games - Polytrack Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">RACING GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">High-speed racing including Polytrack Pizza Edition with track building and competitive challenges.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Running Games -->
+            <a href="/category/running.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #FFD580">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../images/categories-img/running-group.jpg"
+                               title="Running Games Collection - Pizza Edition Unblocked"
+                               aria-label="Preview of endless runner and running games on Pizza Edition">
+                            <source src="../images/category-video/running-group-landscape-611x343_30fps.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/running-games.vtt" srclang="en" label="Running Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Running Games Collection - Pizza Edition",
+                            "description": "Endless runner and running games with exciting obstacles and challenges. Play unblocked running games at Pizza Edition.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/images/categories-img/running-group.jpg",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/running-group-landscape-611x343_30fps.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "running games, unblocked running games, pizza edition running, endless runner, obstacle running"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../images/categories-img/running-group.jpg" type="image/jpeg"
+                                class="rounded-3 img-fluid" srcset="../images/categories-img/running-group.jpg">
+                            <img data-src="../images/categories-img/running-group.jpg" 
+                                 alt="Running Games Collection - Endless runners and obstacle courses at Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play Running Games - Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">RUNNING GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">Endless runner and running games with exciting obstacles and fast-paced challenges.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Shooting Games -->
+            <a href="/category/shooting.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #669499">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../media/stupid-zombies.png"
+                               title="Shooting Games Collection - Pizza Edition Unblocked"
+                               aria-label="Preview of shooting and target games available on Pizza Edition">
+                            <source src="../images/category-video/shooting-group-landscape-611x343_30fps.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/shooting-games.vtt" srclang="en" label="Shooting Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Shooting Games Collection - Pizza Edition",
+                            "description": "Shooting and target games with various weapons and challenges. Play unblocked shooting games at Pizza Edition.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/media/stupid-zombies.png",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/shooting-group-landscape-611x343_30fps.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "shooting games, unblocked shooting games, pizza edition shooting, target games, weapon games"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../media/stupid-zombies.png" type="image/png"
+                                class="rounded-3 img-fluid" srcset="../media/stupid-zombies.png">
+                            <img data-src="../media/stupid-zombies.png" 
+                                 alt="Shooting Games Collection - Target practice and shooting challenges at Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play Shooting Games - Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">SHOOTING GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">Shooting and target games with various weapons and strategic challenges.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Skill Games -->
+            <a href="/category/skill.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #E0BBE4">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../media/rolly-vortex.png"
+                               title="Skill Games Collection - Pizza Edition Unblocked"
+                               aria-label="Preview of skill-based and dexterity games on Pizza Edition">
+                            <source src="../images/category-video/skill-group-landscape-611x343_30fps.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/skill-games.vtt" srclang="en" label="Skill Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Skill Games Collection - Pizza Edition",
+                            "description": "Skill-based and dexterity games that test reflexes and coordination. Play unblocked skill games at Pizza Edition.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/media/rolly-vortex.png",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/skill-group-landscape-611x343_30fps.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "skill games, unblocked skill games, pizza edition skill, dexterity games, reflex games"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../media/rolly-vortex.png" type="image/png"
+                                class="rounded-3 img-fluid" srcset="../media/rolly-vortex.png">
+                            <img data-src="../media/rolly-vortex.png" 
+                                 alt="Skill Games Collection - Dexterity and reflex challenges at Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play Skill Games - Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">SKILL GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">Skill-based and dexterity games that test reflexes, coordination, and precision.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Sports Games -->
+            <a href="/category/sports.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #C4F0C5">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../media/heads-arena-soccer-all-stars.png"
+                               title="Sports Games Collection - Retro Bowl Pizza Edition"
+                               aria-label="Preview of sports games including Retro Bowl Pizza Edition and athletic competitions">
+                            <source src="../images/category-video/sports-group-landscape-611x343_30fps.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/sports-games.vtt" srclang="en" label="Sports Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Sports Games Collection - Retro Bowl Pizza Edition",
+                            "description": "Sports games including Retro Bowl Pizza Edition, Retro Bowl College Pizza Edition, soccer, basketball, and athletic competitions.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/media/heads-arena-soccer-all-stars.png",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/sports-group-landscape-611x343_30fps.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "sports games, retro bowl pizza edition, retro bowl college pizza edition, unblocked sports games, football games, soccer games"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../media/heads-arena-soccer-all-stars.png" type="image/png"
+                                class="rounded-3 img-fluid" srcset="../media/heads-arena-soccer-all-stars.png">
+                            <img data-src="../media/heads-arena-soccer-all-stars.png" 
+                                 alt="Sports Games Collection - Athletic competitions including Retro Bowl Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play Sports Games - Retro Bowl Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">SPORTS GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">Athletic competitions featuring Retro Bowl Pizza Edition, Retro Bowl College Pizza Edition, and various sports.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Stickman Games -->
+            <a href="/category/stickman.html" class="card card-collection visible">
+                <div class="card-collection-body" style="background-color: #B2B2B2">
+                    <div class="card-video-container">
+                        <video class="card-video" 
+                               muted 
+                               loop 
+                               preload="metadata"
+                               poster="../media/stick-defenders.png"
+                               title="Stickman Games Collection - Pizza Edition Unblocked"
+                               aria-label="Preview of stickman and stick figure games on Pizza Edition">
+                            <source src="../images/category-video/stickman-group-611x343_30fps.mp4" type="video/mp4">
+                            <track kind="descriptions" src="../video-descriptions/stickman-games.vtt" srclang="en" label="Stickman Games Description">
+                        </video>
+                        <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Stickman Games Collection - Pizza Edition",
+                            "description": "Stickman and stick figure games with action, adventure, and platformer challenges. Play unblocked stickman games at Pizza Edition.",
+                            "thumbnailUrl": "https://pizza-editions.github.io/media/stick-defenders.png",
+                            "contentUrl": "https://pizza-editions.github.io/images/category-video/stickman-group-611x343_30fps.mp4",
+                            "uploadDate": "2025-01-01",
+                            "duration": "PT30S",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Pizza Edition",
+                                "url": "https://pizza-editions.github.io"
+                            },
+                            "keywords": "stickman games, unblocked stickman games, pizza edition stickman, stick figure games, stick action"
+                        }
+                        </script>
+                    </div>
+                    <div class="card-img">
+                        <picture>
+                            <source data-srcset="../media/stick-defenders.png" type="image/png"
+                                class="rounded-3 img-fluid" srcset="../media/stick-defenders.png">
+                            <img data-src="../media/stick-defenders.png" 
+                                 alt="Stickman Games Collection - Stick figure action and adventures at Pizza Edition"
+                                 class="lazyload rounded-3 img-fluid" 
+                                 width="500" 
+                                 height="500"
+                                 title="Play Stickman Games - Pizza Edition Unblocked">
+                        </picture>
+                    </div>
+                    <div class="card-text">
+                        <h4 style="font-size: 20px;">STICKMAN GAMES</h4>
+                        <p class="card-description" style="font-size: 12px; color: black; padding-top: 10px;">Stickman and stick figure games with action, adventure, and platformer challenges.</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</div>
 
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -981,238 +1253,172 @@
 
 
 
-        <div class="box">
-            <h1 style="text-align: center;" >Explore Categories on Pizza Edition</h1><br>
+       <div class="box">
+        <h1 style="text-align: center;">Complete Gaming Categories Collection - Pizza Edition Unblocked</h1><br>
 
-            <p style="text-align: center;">
-                Discover the best unblocked browser games in 2025 at <a href="https://pizza-editions.github.io/">Pizza
-                    Edition</a>. Browse our categories to find your next favorite game, from 3D adventures to skill
-                challenges, all playable online for free!
+        <p style="text-align: center;">
+            Experience premium unblocked gaming at <a href="https://pizza-editions.github.io/">Pizza Edition</a> - your ultimate destination for instant-play browser entertainment. Access over 200 carefully curated games across 18 categories, all optimized for seamless gameplay without downloads or restrictions.
+        </p>
+
+        <!-- 3D Games Category -->
+        <div class="category-section">
+            <h2>Immersive 3D Gaming Experience</h2>
+            <p>
+                Transform your browser into a 3D gaming powerhouse with <strong>Pizza Edition's unblocked 3D games</strong>. Our collection features cutting-edge WebGL technology delivering console-quality graphics directly in your browser. Experience <em>Poly Track's</em> revolutionary physics-based racing mechanics alongside breakthrough titles offering photorealistic environments. These <strong>premium 3D browser games</strong> utilize advanced rendering techniques, providing smooth 60fps gameplay on any device. Perfect for gamers seeking <strong>next-generation 3D experiences</strong> without installation requirements.
             </p>
+            <a href="/category/3d.html" class="game-button">Discover 3D Gaming Revolution</a>
+        </div> <br>
 
-            <!-- 3D Games Category -->
-            <div class="category-section">
-                <h2>3D Games</h2>
-                <p>
-                    Dive into the world of <strong>unblocked 3D games</strong> at Pizza Edition! In 2025, these browser
-                    games offer stunning depth with immersive environments, ideal for fans of <strong>free online 3D
-                        games</strong>. Titles like <em>Poly Track</em> showcase dynamic 3D racing tracks, while new
-                    additions bring enhanced graphics and interactive challenges. Playable directly in your browser,
-                    these <strong>3D browser games</strong> are perfect for gamers seeking a next-level experience in
-                    2025.
-                </p>
-                <a href="/category/3d.html">Explore 3D Games</a>
-            </div> <br>
-
-            <!-- Action Games Category -->
-            <div class="category-section">
-                <h2>Action Games</h2>
-                <p>
-                    Unleash your energy with <strong>unblocked action games</strong> at Pizza Edition! In 2025, these
-                    browser games deliver fast-paced fun with titles like <em>Choppy Orc</em>, where you solve puzzles
-                    with an axe, and <em>Gladihoppers</em>, a hopping gladiator battle. Perfect for lovers of
-                    <strong>free online action games</strong>, our collection features intuitive controls and
-                    challenging levels. These <strong>action browser games</strong> are accessible anytime, making them
-                    a top pick in 2025.
-                </p>
-                <a href="/category/action.html">Explore Action Games</a>
-            </div> <br>
-
-            <!-- Adventure Games Category -->
-            <div class="category-section">
-                <h2>Adventure Games</h2>
-                <p>
-                    Embark on epic journeys with <strong>unblocked adventure games</strong> at Pizza Edition! In 2025,
-                    these browser games offer exciting quests and exploration, with titles like <em>Tomb of the
-                        Mask</em> leading you through mazes and traps. Ideal for fans of <strong>free online adventure
-                        games</strong>, our collection features engaging stories and challenges. Play these
-                    <strong>adventure browser games</strong> directly in your browser for a 2025 gaming adventure.
-                </p>
-                <a href="/category/adventure.html">Explore Adventure Games</a>
-            </div> <br>
-
-            <!-- Car Games Category -->
-            <div class="category-section">
-                <h2>Car Games</h2>
-                <p>
-                    Hit the road with <strong>unblocked car games</strong> at Pizza Edition! In 2025, these browser
-                    games bring exciting races with titles like <em>Poly Track</em>, featuring customizable 3D tracks,
-                    and <em>Race Survival</em> with intense arena battles. Perfect for fans of <strong>free online car
-                        games</strong>, our collection offers speed and strategy. These <strong>car browser
-                        games</strong> are playable in your browser, ideal for 2025 gaming sessions.
-                </p>
-                <a href="/category/car.html">Explore Car Games</a>
-            </div> <br>
-
-            <!-- Fighting Games Category -->
-            <div class="category-section">
-                <h2>Fighting Games</h2>
-                <p>
-                    Step into the ring with <strong>unblocked fighting games</strong> at Pizza Edition! In 2025, these
-                    browser games offer intense combat with titles like <em>Gladihoppers</em>, featuring unique hopping
-                    battles. Perfect for fans of <strong>free online fighting games</strong>, our collection delivers
-                    strategic fights and physics-based action. These <strong>fighting browser games</strong> are
-                    accessible in your browser, a hit in 2025.
-                </p>
-                <a href="/category/fighting.html">Explore Fighting Games</a>
-            </div> <br>
-
-            <!-- Idle Games Category -->
-            <div class="category-section">
-                <h2>Idle Games</h2>
-                <p>
-                    Unwind with <strong>unblocked idle games</strong> at Pizza Edition! In 2025, these browser games let
-                    you progress with minimal effort, ideal for fans of <strong>free online idle games</strong>. Titles
-                    like upcoming idle simulators offer passive growth and upgrades. Play these <strong>idle browser
-                        games</strong> directly in your browser for a stress-free 2025 gaming experience.
-                </p>
-                <a href="/category/idle.html">Explore Idle Games</a>
-            </div> <br>
-
-            <!-- Moto Games Category -->
-            <div class="category-section">
-                <h2>Moto Games</h2>
-                <p>
-                    Rev up with <strong>unblocked moto games</strong> at Pizza Edition! In 2025, these browser games
-                    deliver thrilling rides with upcoming moto racing titles and classics like <em>Poly Track</em>
-                    variants. Perfect for fans of <strong>free online moto games</strong>, our collection offers jumps
-                    and stunts. These <strong>moto browser games</strong> are playable in your browser, a 2025 favorite.
-                </p>
-                <a href="/category/moto.html">Explore Moto Games</a>
-            </div> <br>
-
-            <!-- Multiplayer Games Category -->
-            <div class="category-section">
-                <h2>Multiplayer Games</h2>
-                <p>
-                    Team up with <strong>unblocked multiplayer games</strong> at Pizza Edition! In 2025, these browser
-                    games offer social fun with titles like <em>Race Survival</em> for competitive races. Perfect for
-                    fans of <strong>free online multiplayer games</strong>, our collection fosters collaboration. These
-                    <strong>multiplayer browser games</strong> are accessible in your browser, a 2025 trend.
-                </p>
-                <a href="/category/multiplayer.html">Explore Multiplayer Games</a>
-            </div> <br>
-
-            <!-- New Games Category -->
-            <div class="category-section">
-                <h2>New Games</h2>
-                <p>
-                    Stay ahead with <strong>unblocked new games</strong> at Pizza Edition! In 2025, these browser games
-                    introduce the latest titles, including updates to <em>Poly Track</em> and new adventures. Perfect
-                    for fans of <strong>free online new games</strong>, our collection refreshes regularly. These
-                    <strong>new browser games</strong> are playable in your browser, a 2025 highlight.
-                </p>
-                <a href="/category/new.html">Explore New Games</a>
-            </div> <br>
-
-            <!-- Popular Games Category -->
-            <div class="category-section">
-                <h2>Popular Games</h2>
-                <p>
-                    Join the crowd with <strong>unblocked popular games</strong> at Pizza Edition! In 2025, these
-                    browser games feature fan favorites like <em>Choppy Orc</em>, <em>Gladihoppers</em>, and <em>Poly
-                        Track</em>. Perfect for lovers of <strong>free online popular games</strong>, our collection
-                    showcases top picks. These <strong>popular browser games</strong> are accessible in your browser, a
-                    2025 must-play.
-                </p>
-                <a href="/category/popular.html">Explore Popular Games</a>
-            </div> <br>
-
-            <!-- Puzzle Games Category -->
-            <div class="category-section">
-                <h2>Puzzle Games</h2>
-                <p>
-                    Challenge your mind with <strong>unblocked puzzle games</strong> at Pizza Edition! In 2025, these
-                    browser games test your skills with titles like <em>Choppy Orc</em>, featuring axe-based puzzles.
-                    Ideal for fans of <strong>free online puzzle games</strong>, our collection offers brain-teasing
-                    fun. These <strong>puzzle browser games</strong> are playable in your browser, a 2025 favorite.
-                </p>
-                <a href="/category/puzzle.html">Explore Puzzle Games</a>
-            </div> <br>
-
-            <!-- Running Games Category -->
-            <div class="category-section">
-                <h2>Running Games</h2>
-                <p>
-                    Sprint to victory with <strong>unblocked running games</strong> at Pizza Edition! In 2025, these
-                    browser games offer speedy challenges with upcoming titles and classics. Perfect for fans of
-                    <strong>free online running games</strong>, our collection delivers endless races. These
-                    <strong>running browser games</strong> are accessible in your browser, a 2025 thrill.
-                </p>
-                <a href="/category/running.html">Explore Running Games</a>
-            </div> <br>
-
-            <!-- Racing Games Category -->
-            <div class="category-section">
-                <h2>Racing Games</h2>
-                <p>
-                    Speed into action with <strong>unblocked racing games</strong> at Pizza Edition! In 2025, these
-                    browser games bring thrills with <em>Poly Track</em>’s custom tracks and <em>Race Survival</em>’s
-                    arena battles. Perfect for fans of <strong>free online racing games</strong>, our collection offers
-                    speed and strategy. These <strong>racing browser games</strong> are playable in your browser, a 2025
-                    hit.
-                </p>
-                <a href="/category/racing.html">Explore Racing Games</a>
-            </div> <br>
-
-            <!-- Shooting Games Category -->
-            <div class="category-section">
-                <h2>Shooting Games</h2>
-                <p>
-                    Lock and load with <strong>unblocked shooting games</strong> at Pizza Edition! In 2025, these
-                    browser games offer target challenges with upcoming titles. Perfect for fans of <strong>free online
-                        shooting games</strong>, our collection delivers precision and action. These <strong>shooting
-                        browser games</strong> are accessible in your browser, a 2025 standout.
-                </p>
-                <a href="/category/shooting.html">Explore Shooting Games</a>
-            </div> <br>
-
-            <!-- Skill Games Category -->
-            <div class="category-section">
-                <h2>Skill Games</h2>
-                <p>
-                    Hone your talents with <strong>unblocked skill games</strong> at Pizza Edition! In 2025, these
-                    browser games challenge your precision with titles like <em>Tomb of the Mask</em>’s maze navigation.
-                    Perfect for fans of <strong>free online skill games</strong>, our collection offers diverse tests.
-                    These <strong>skill browser games</strong> are playable in your browser, a 2025 must-try.
-                </p>
-                <a href="/category/skill.html">Explore Skill Games</a>
-            </div> <br>
-
-            <!-- Sports Games Category -->
-            <div class="category-section">
-                <h2>Sports Games</h2>
-                <p>
-                    Get in the game with <strong>unblocked sports games</strong> at Pizza Edition! In 2025, these
-                    browser games offer athletic challenges with upcoming titles. Perfect for fans of <strong>free
-                        online sports games</strong>, our collection delivers competition. These <strong>sports browser
-                        games</strong> are accessible in your browser, a 2025 favorite.
-                </p>
-                <a href="/category/sports.html">Explore Sports Games</a>
-            </div> <br>
-
-            <!-- Stickman Games Category -->
-            <div class="category-section">
-                <h2>Stickman Games</h2>
-                <meta name="title" content="Stickman Games - Unblocked Stickman Games 2025 | Pizza Edition">
-              
-                <p>
-                    Jump into action with <strong>unblocked stickman games</strong> at Pizza Edition! In 2025, these
-                    browser games feature stick-figure adventures with upcoming titles. Perfect for fans of <strong>free
-                        online stickman games</strong>, our collection offers quirky fun. These <strong>stickman browser
-                        games</strong> are playable in your browser, a 2025 delight.
-                </p>
-                <a href="/category/stickman.html">Explore Stickman Games</a>
-            </div> <br>
-
-            <p style="text-align: center;">
-                Want to request a game for any category? Visit our <a href="/contact.html">Contact Us</a> page to let us
-                know! Stay updated with the latest unblocked games at <a href="https://pizza-editions.github.io/">Pizza
-                    Edition</a>.
+        <!-- Action Games Category -->
+        <div class="category-section">
+            <h2>High-Octane Action Adventures</h2>
+            <p>
+                Ignite your adrenaline with <strong>Pizza Edition's explosive action game library</strong>. Our extensive roster delivers heart-pounding excitement through innovative titles like <em>Choppy Orc's</em> strategic combat system and <em>Gladihoppers'</em> physics-driven gladiator battles. Each game features precision controls, dynamic combat mechanics, and progressive difficulty curves. These <strong>award-winning action browser games</strong> combine reflexes with strategy, offering both casual and hardcore gaming experiences. Dominate leaderboards in our <strong>competitive action gaming ecosystem</strong> designed for maximum engagement.
             </p>
-        </div>
+            <a href="/category/action.html" class="game-button">Enter Action Gaming Arena</a>
+        </div> <br>
 
+        <!-- Adventure Games Category -->
+        <div class="category-section">
+            <h2>Epic Quest & Exploration Hub</h2>
+            <p>
+                Embark on legendary adventures through <strong>Pizza Edition's immersive adventure gaming portal</strong>. Our adventure collection transports players into richly detailed worlds featuring complex narratives and challenging puzzles. Navigate through <em>Tomb of the Mask's</em> intricate labyrinth systems while discovering hidden secrets and power-ups. These <strong>story-driven adventure browser games</strong> offer hours of exploration with branching pathways and multiple endings. Perfect for players craving <strong>narrative-rich gaming experiences</strong> with puzzle-solving elements and character development.
+            </p>
+            <a href="/category/adventure.html" class="game-button">Begin Your Adventure Journey</a>
+        </div> <br>
 
+        <!-- Car Games Category -->
+        <div class="category-section">
+            <h2>Ultimate Racing & Driving Simulator</h2>
+            <p>
+                Accelerate into automotive excellence with <strong>Pizza Edition's premier car gaming collection</strong>. Our lineup features advanced driving simulators including <em>Poly Track's</em> customizable circuit builder and <em>Race Survival's</em> intense demolition derby mechanics. Experience realistic vehicle physics, dynamic weather systems, and competitive multiplayer racing. These <strong>professional-grade car browser games</strong> deliver authentic driving experiences with customizable vehicles and track designs. Ideal for motorsport enthusiasts seeking <strong>simulation-quality racing games</strong> with arcade accessibility and social features.
+            </p>
+            <a href="/category/car.html" class="game-button">Rev Up Your Racing Experience</a>
+        </div> <br>
+
+        <!-- Fighting Games Category -->
+        <div class="category-section">
+            <h2>Combat Sports & Fighting Championship</h2>
+            <p>
+                Master martial arts excellence through <strong>Pizza Edition's dynamic fighting game tournament</strong>. Our combat collection showcases innovative fighting mechanics featuring <em>Gladihoppers'</em> unique gravity-defying battles and combo-heavy gameplay systems. Each title offers deep fighting mechanics, character customization, and tournament modes with ranking systems. These <strong>competitive fighting browser games</strong> combine traditional fighting game elements with modern physics engines. Perfect for combat sports fans seeking <strong>technical fighting experiences</strong> with strategic depth and online tournaments.
+            </p>
+            <a href="/category/fighting.html" class="game-button">Enter Combat Championship</a>
+        </div> <br>
+
+        <!-- Idle Games Category -->
+        <div class="category-section">
+            <h2>Passive Gaming & Incremental Progress</h2>
+            <p>
+                Achieve effortless progression through <strong>Pizza Edition's sophisticated idle gaming ecosystem</strong>. Our idle collection features intelligent automation systems allowing continuous advancement even when offline. Experience exponential growth mechanics, prestige systems, and strategic resource management with detailed statistics tracking. These <strong>innovative idle browser games</strong> combine passive progression with active decision-making, creating engaging long-term gameplay loops. Optimal for busy gamers seeking <strong>low-maintenance gaming experiences</strong> with substantial rewards and meaningful progression.
+            </p>
+            <a href="/category/idle.html" class="game-button">Start Your Idle Empire</a>
+        </div> <br>
+
+        <!-- Moto Games Category -->
+        <div class="category-section">
+            <h2>Motorcycle Racing & Stunt Performance</h2>
+            <p>
+                Conquer two-wheeled thrills with <strong>Pizza Edition's adrenaline-fueled motorcycle gaming collection</strong>. Our moto lineup delivers authentic bike physics, extreme stunt challenges, and competitive circuit racing across diverse terrains. Master wheelies, jumps, and precision maneuvers while customizing your ride with performance upgrades. These <strong>realistic motorcycle browser games</strong> feature detailed bike customization, career progression, and multiplayer championships. Essential for motorcycle enthusiasts craving <strong>authentic two-wheeler simulation</strong> with extreme sports elements and competitive racing.
+            </p>
+            <a href="/category/moto.html" class="game-button">Ride Into Moto Madness</a>
+        </div> <br>
+
+        <!-- Multiplayer Games Category -->
+        <div class="category-section">
+            <h2>Social Gaming & Competitive Multiplayer</h2>
+            <p>
+                Connect with global players through <strong>Pizza Edition's advanced multiplayer gaming network</strong>. Our social gaming platform features real-time competitions, team-based challenges, and cross-platform compatibility with low-latency connections. Dominate <em>Race Survival's</em> multiplayer arenas while building lasting gaming friendships through integrated chat systems. These <strong>community-driven multiplayer browser games</strong> offer voice chat, ranking systems, and seasonal tournaments. Perfect for social gamers seeking <strong>collaborative gaming experiences</strong> with competitive elements and guild systems.
+            </p>
+            <a href="/category/multiplayer.html" class="game-button">Join Gaming Community</a>
+        </div> <br>
+
+        <!-- New Games Category -->
+        <div class="category-section">
+            <h2>Latest Releases & Fresh Gaming Content</h2>
+            <p>
+                Stay ahead of gaming trends with <strong>Pizza Edition's cutting-edge new releases section</strong>. Our fresh content pipeline delivers weekly game additions, featuring enhanced <em>Poly Track</em> editions and revolutionary gameplay mechanics. Each new title undergoes rigorous testing ensuring optimal performance and innovation before release. These <strong>brand-new browser games</strong> showcase the latest in web gaming technology and creative design principles. Ideal for trendsetters seeking <strong>pioneering gaming experiences</strong> before they go mainstream, with exclusive early access opportunities.
+            </p>
+            <a href="/category/new.html" class="game-button">Explore Latest Gaming Innovations</a>
+        </div> <br>
+
+        <!-- Popular Games Category -->
+        <div class="category-section">
+            <h2>Chart-Topping & Community Favorites</h2>
+            <p>
+                Join millions playing <strong>Pizza Edition's most celebrated gaming hits</strong>. Our popularity rankings highlight community-approved titles including <em>Choppy Orc's</em> puzzle mastery, <em>Gladihoppers'</em> combat innovation, and <em>Poly Track's</em> racing excellence. These games consistently rank highest for player engagement, retention rates, and satisfaction scores. Our <strong>top-rated browser games</strong> represent the pinnacle of web gaming entertainment with proven replay value. Essential for gamers seeking <strong>guaranteed entertainment quality</strong> with massive player bases and active communities.
+            </p>
+            <a href="/category/popular.html" class="game-button">Play Community Champions</a>
+        </div> <br>
+
+        <!-- Puzzle Games Category -->
+        <div class="category-section">
+            <h2>Brain Training & Logic Challenges</h2>
+            <p>
+                Sharpen cognitive abilities through <strong>Pizza Edition's intellectually stimulating puzzle collection</strong>. Our brain training library features progressive difficulty systems, pattern recognition challenges, and creative problem-solving scenarios with adaptive learning. Master <em>Choppy Orc's</em> strategic axe-based puzzles while developing critical thinking skills through varied challenge types. These <strong>educational puzzle browser games</strong> combine entertainment with mental exercise, offering scientifically-backed cognitive benefits. Perfect for learners seeking <strong>mind-enhancing gaming experiences</strong> with measurable progress tracking and skill development.
+            </p>
+            <a href="/category/puzzle.html" class="game-button">Challenge Your Mind</a>
+        </div> <br>
+
+        <!-- Running Games Category -->
+        <div class="category-section">
+            <h2>Endless Running & Parkour Adventures</h2>
+            <p>
+                Master momentum-based gameplay through <strong>Pizza Edition's dynamic running game collection</strong>. Our endless runner selection features innovative obstacle courses, fluid parkour mechanics, and rhythm-based challenges with procedural generation. Experience responsive character movement, environmental interactions, and comprehensive achievement systems. These <strong>fast-paced running browser games</strong> offer simple controls with complex mastery curves, providing instant accessibility with long-term progression. Ideal for casual gamers seeking <strong>quick-play running experiences</strong> with competitive leaderboards and daily challenges.
+            </p>
+            <a href="/category/running.html" class="game-button">Sprint to Victory</a>
+        </div> <br>
+
+        <!-- Racing Games Category -->
+        <div class="category-section">
+            <h2>Professional Racing & Speed Championships</h2>
+            <p>
+                Dominate the track with <strong>Pizza Edition's championship-level racing game collection</strong>. Our racing simulation features <em>Poly Track's</em> advanced track editor and <em>Race Survival's</em> combat racing mechanics with realistic damage systems. Experience authentic vehicle handling, dynamic weather effects, and comprehensive career progression with sponsorship opportunities. These <strong>professional racing browser games</strong> deliver genuine motorsport experiences with customizable vehicles and competitive online racing. Essential for speed enthusiasts seeking <strong>championship-quality racing simulation</strong> with social features and esports integration.
+            </p>
+            <a href="/category/racing.html" class="game-button">Claim Racing Glory</a>
+        </div> <br>
+
+        <!-- Shooting Games Category -->
+        <div class="category-section">
+            <h2>Precision Shooting & Tactical Combat</h2>
+            <p>
+                Perfect your marksmanship with <strong>Pizza Edition's advanced shooting game arsenal</strong>. Our tactical collection emphasizes precision aiming, strategic positioning, and comprehensive weapon customization systems. Master various shooting disciplines from sniper challenges to close-quarters combat scenarios with realistic ballistics modeling. These <strong>skill-based shooting browser games</strong> feature environmental factors, wind physics, and progressive difficulty levels with performance analytics. Optimal for players seeking <strong>tactical shooting experiences</strong> with competitive ranking systems and tournament modes.
+            </p>
+            <a href="/category/shooting.html" class="game-button">Target Excellence</a>
+        </div> <br>
+
+        <!-- Skill Games Category -->
+        <div class="category-section">
+            <h2>Dexterity & Precision Mastery</h2>
+            <p>
+                Develop exceptional hand-eye coordination through <strong>Pizza Edition's skill-building game library</strong>. Our dexterity collection features <em>Tomb of the Mask's</em> precision navigation alongside timing-based challenges requiring perfect execution and muscle memory. Each game offers detailed performance analytics, improvement tracking, and personalized training recommendations. These <strong>skill-development browser games</strong> combine entertainment with measurable ability enhancement, featuring adaptive difficulty systems. Perfect for competitive players seeking <strong>precision-based gaming challenges</strong> with comprehensive skill progression metrics and coaching features.
+            </p>
+            <a href="/category/skill.html" class="game-button">Master Gaming Skills</a>
+        </div> <br>
+
+        <!-- Sports Games Category -->
+        <div class="category-section">
+            <h2>Athletic Competition & Sports Simulation</h2>
+            <p>
+                Experience authentic sports action through <strong>Pizza Edition's comprehensive sports gaming collection</strong>. Our athletic simulation features realistic player mechanics, team management systems, and tournament competitions across multiple sports disciplines. Master various athletic challenges with career progression, statistical tracking, and fantasy league integration. These <strong>realistic sports browser games</strong> deliver authentic sporting experiences with strategic depth and competitive multiplayer modes. Essential for sports fans seeking <strong>professional-level athletic simulation</strong> with team building elements and seasonal competitions.
+            </p>
+            <a href="/category/sports.html" class="game-button">Compete in Sports Arena</a>
+        </div> <br>
+
+        <!-- Stickman Games Category -->
+        <div class="category-section">
+            <h2>Minimalist Action & Stick Figure Adventures</h2>
+            <meta name="title" content="Stickman Games - Revolutionary Stick Figure Gaming | Pizza Edition">
+            
+            <p>
+                Discover creative simplicity through <strong>Pizza Edition's innovative stickman gaming universe</strong>. Our stick figure collection proves that minimalist design creates maximum entertainment value through clever mechanics and engaging gameplay. Experience fluid animation systems, creative physics interactions, and surprisingly deep storylines with emotional resonance. These <strong>artistic stickman browser games</strong> demonstrate how simple graphics can deliver complex gaming experiences with innovative mechanics. Perfect for players appreciating <strong>creative game design</strong> with artistic expression, unique visual styles, and breakthrough gameplay concepts.
+            </p>
+            <a href="/category/stickman.html" class="game-button">Enter Stickman Universe</a>
+        </div> <br>
+
+        <p style="text-align: center;">
+            Ready to request your favorite game for any category? Connect with our gaming community through our <a href="/contact.html">Contact Portal</a> and share your suggestions! Stay connected with the latest unblocked gaming innovations at <a href="https://pizza-editions.github.io/">Pizza Edition</a> - where premium browser gaming meets unlimited entertainment.
+        </p>
+    </div>
 
     </div> <!-- end Container -->
 
@@ -1254,26 +1460,8 @@
     <script type="text/javascript" src="../js/script.js"></script>
     <script type="text/javascript" src="../js/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <script>
-        particlesJS("particles-js", {
-            particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: "#f0d210" },
-                shape: { type: "circle" },
-                opacity: { value: 0.5 },
-                size: { value: 3 },
-                line_linked: { enable: true, distance: 150, color: "#f1f1f1", opacity: 0.4, width: 1 },
-                move: { enable: true, speed: 6 }
-            },
-            interactivity: {
-                detect_on: "canvas",
-                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
-                modes: { repulse: { distance: 200 }, push: { particles_nb: 4 } }
-            },
-            retina_detect: true
-        });
-    </script>
-    </div>
+    <script src="/random.js"></script>
+    <script src="/js/particles.js"></script>
 
 
 </body>
