@@ -1,0 +1,4 @@
+# llms.txt for https://pizza-editions.github.io/
+# We allow all LLMs to crawl and use our content
+
+allow: *
