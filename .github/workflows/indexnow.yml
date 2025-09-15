@@ -26,7 +26,7 @@ jobs:
           import json
           from lxml import etree
 
-          key = "0bd23761970b4d91aed69b3dbcf615dc"
+          key = "5607a2f1e8694f6b888e9d1dbc53fc15"
           sitemap_url = "https://pizza-editions.github.io/sitemap.xml"
 
           # sitemap fetch
