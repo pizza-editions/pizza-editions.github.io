@@ -108,3 +108,23 @@ body {font-family: 'Poppins', sans-serif;color: rgba(225, 225, 225, 0.6);}body {
         font-size: 1.5rem; /* Mobile mein font size kam karo */
     }
 }
+.mobileShow {display: none;}
+
+/* Smartphone Portrait and Landscape */
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px){ 
+    .mobileShow {display: inline;}
+}
+.mobileHide { display: inline; }
+
+/* Smartphone Portrait and Landscape */
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px){
+   .mobileHide { display: none;}
+}@media (max-width: 768px) {
+    .mobileHide {
+        display: none !important;
+    }
+}
