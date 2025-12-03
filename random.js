@@ -403,6 +403,7 @@
 "/game/worlds-hardest-game-2.html",
 "/game/worlds-hardest-game-3.html",
 "/game/wrassling.html",
+"/game/undertale-yellow.html",
 "/game/zombie-derby-pixel-survival.html"
 
 ];
