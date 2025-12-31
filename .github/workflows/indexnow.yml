@@ -1,17 +1,17 @@
-name: IndexNow Submit (Clean)
+name: IndexNow Submit (After Pages Deploy)
 
 on:
-  workflow_dispatch:
-  push:
-    branches: [ main ]
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types:
+      - completed
 
 jobs:
   indexnow:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
@@ -25,21 +25,24 @@ jobs:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: |
           python - <<EOF
-          import os, requests, json
+          import os, time, requests, json
           from lxml import etree
 
           KEY = os.getenv("INDEXNOW_KEY")
           HOST = "pizza-editions.github.io"
-          SITEMAP = "https://pizza-editions.github.io/sitemap.xml"
           KEY_URL = f"https://{HOST}/{KEY}.txt"
+          SITEMAP = f"https://{HOST}/sitemap.xml"
           ENDPOINT = "https://api.indexnow.org/indexnow"
 
-          # 1. verify key file
+          # wait to avoid CDN delay
+          time.sleep(20)
+
+          # verify key file
           r = requests.head(KEY_URL, timeout=10)
           if r.status_code != 200:
-              raise Exception("IndexNow key file NOT reachable")
+              raise Exception("IndexNow key file still not reachable")
 
-          # 2. fetch sitemap
+          # fetch sitemap
           res = requests.get(SITEMAP, timeout=20)
           res.raise_for_status()
 
@@ -50,7 +53,6 @@ jobs:
           if not urls:
               raise Exception("No URLs found in sitemap")
 
-          # 3. submit (chunk safe)
           payload = {
               "host": HOST,
               "key": KEY,
