@@ -1900,7 +1900,7 @@
                             "captcha-check-failed": "The reCAPTCHA response token provided is either invalid, expired, already used or the domain associated with it does not match the list of whitelisted domains.",
                             "code-expired": "The SMS code has expired. Please re-send the verification code to try again.",
                             "cordova-not-ready": "Cordova framework is not ready.",
-                            "cors-unsupported": "This browser is not supported.",
+                            "cors-unsupported": "This Browser is not supported.",
                             "credential-already-in-use": "This credential is already associated with a different user account.",
                             "custom-token-mismatch": "The custom token corresponds to a different audience.",
                             "requires-recent-login": "This operation is sensitive and requires recent authentication. Log in again before retrying this request.",
@@ -1915,7 +1915,7 @@
                             "invalid-auth-event": "An internal error has occurred.",
                             "invalid-verification-code": "The SMS verification code used to create the phone auth credential is invalid. Please resend the verification code sms and be sure use the verification code provided by the user.",
                             "invalid-continue-uri": "The continue URL provided in the request is invalid.",
-                            "invalid-cordova-configuration": "The following Cordova plugins must be installed to enable OAuth sign-in: cordova-plugin-buildinfo, cordova-universal-links-plugin, cordova-plugin-browsertab, cordova-plugin-inappbrowser and cordova-plugin-customurlscheme.",
+                            "invalid-cordova-configuration": "The following Cordova plugins must be installed to enable OAuth sign-in: cordova-plugin-buildinfo, cordova-universal-links-plugin, cordova-plugin-Browsertab, cordova-plugin-inappBrowser and cordova-plugin-customurlscheme.",
                             "invalid-custom-token": "The custom token format is incorrect. Please check the documentation.",
                             "invalid-dynamic-link-domain": "The provided dynamic link domain is not configured or authorized for the current project.",
                             "invalid-email": "The email address is badly formatted.",
@@ -1953,7 +1953,7 @@
                             "null-user": "A null user object was provided as the argument for an operation which requires a non-null user object.",
                             "operation-not-allowed": "The given sign-in provider is disabled for this Firebase project. Enable it in the Firebase console, under the sign-in method tab of the Auth section.",
                             "operation-not-supported-in-this-environment": 'This operation is not supported in the environment this application is running on. "location.protocol" must be http, https or chrome-extension and web storage must be enabled.',
-                            "popup-blocked": "Unable to establish a connection with the popup. It may have been blocked by the browser.",
+                            "popup-blocked": "Unable to establish a connection with the popup. It may have been blocked by the Browser.",
                             "popup-closed-by-user": "The popup has been closed by the user before finalizing the operation.",
                             "provider-already-linked": "User can only be linked to one identity for the given provider.",
                             "quota-exceeded": "The project's quota for this operation has been exceeded.",
@@ -1973,7 +1973,7 @@
                             "user-mismatch": "The supplied credentials do not correspond to the previously signed in user.",
                             "user-signed-out": "",
                             "weak-password": "The password must be 6 characters long or more.",
-                            "web-storage-unsupported": "This browser is not supported or 3rd party cookies and data may be disabled."
+                            "web-storage-unsupported": "This Browser is not supported or 3rd party cookies and data may be disabled."
                         };
 
                     function Qi(t) {
@@ -2700,7 +2700,7 @@
                         var t = new XMLHttpRequest;
                         if ("withCredentials" in t) return t;
                         if ("undefined" != typeof XDomainRequest) return new Co;
-                        throw Error("Unsupported browser")
+                        throw Error("Unsupported Browser")
                     }, Do.prototype.b = function() {
                         return {}
                     }, (t = Co.prototype).open = function(t, e, n) {
@@ -3047,7 +3047,7 @@
                                     if ("mozResponseArrayBuffer" in this.a) return this.a.mozResponseArrayBuffer
                             }
                             var t = this.b;
-                            return t && t.log(Uo, "Response type " + this.m + " is not supported on this browser", void 0), null
+                            return t && t.log(Uo, "Response type " + this.m + " is not supported on this Browser", void 0), null
                         } catch (t) {
                             return Wo(this.b, "Can not get response: " + t.message), null
                         }
@@ -4679,8 +4679,8 @@
                         }) : zt(Error("Cordova must run in an Android or iOS file scheme."))).then(function() {
                             if ("function" != typeof mi("universalLinks.subscribe", l)) throw Gu("cordova-universal-links-plugin-fix is not installed");
                             if (void 0 === mi("BuildInfo.packageName", l)) throw Gu("cordova-plugin-buildinfo is not installed");
-                            if ("function" != typeof mi("cordova.plugins.browsertab.openUrl", l)) throw Gu("cordova-plugin-browsertab is not installed");
-                            if ("function" != typeof mi("cordova.InAppBrowser.open", l)) throw Gu("cordova-plugin-inappbrowser is not installed")
+                            if ("function" != typeof mi("cordova.plugins.Browsertab.openUrl", l)) throw Gu("cordova-plugin-Browsertab is not installed");
+                            if ("function" != typeof mi("cordova.InAppBrowser.open", l)) throw Gu("cordova-plugin-inappBrowser is not installed")
                         }, function() {
                             throw new Yi("cordova-not-ready")
                         })
@@ -4726,12 +4726,12 @@
                                     var t = n.h;
                                     return n.v.a.set(Ru, a.A(), t)
                                 }).then(function() {
-                                    var t = mi("cordova.plugins.browsertab.isAvailable", l);
+                                    var t = mi("cordova.plugins.Browsertab.isAvailable", l);
                                     if ("function" != typeof t) throw new Yi("invalid-cordova-configuration");
                                     var e = null;
                                     t(function(t) {
                                         if (t) {
-                                            if ("function" != typeof(e = mi("cordova.plugins.browsertab.openUrl", l))) throw new Yi("invalid-cordova-configuration");
+                                            if ("function" != typeof(e = mi("cordova.plugins.Browsertab.openUrl", l))) throw new Yi("invalid-cordova-configuration");
                                             e(h)
                                         } else {
                                             if ("function" != typeof(e = mi("cordova.InAppBrowser.open", l))) throw new Yi("invalid-cordova-configuration");
@@ -4743,7 +4743,7 @@
                         }).then(function() {
                             return new qt(function(e, t) {
                                 s = function() {
-                                    var t = mi("cordova.plugins.browsertab.close", l);
+                                    var t = mi("cordova.plugins.Browsertab.close", l);
                                     return e(), "function" == typeof t && t(), r.a && "function" == typeof r.a.close && (r.a.close(), r.a = null), !1
                                 }, r.ya(s), u = function() {
                                     a = a || un(2e3).then(function() {
@@ -6312,7 +6312,7 @@
                                 theme: "light",
                                 type: "image"
                             }, this.h = [], this.a[Wh]) throw new Yi("argument-error", "sitekey should not be provided for reCAPTCHA as one is automatically provisioned for the current project.");
-                        if (this.i = "invisible" === this.a[Xh], !l.document) throw new Yi("operation-not-supported-in-this-environment", "RecaptchaVerifier is only supported in a browser HTTP/HTTPS environment with DOM support.");
+                        if (this.i = "invisible" === this.a[Xh], !l.document) throw new Yi("operation-not-supported-in-this-environment", "RecaptchaVerifier is only supported in a Browser HTTP/HTTPS environment with DOM support.");
                         if (!Fn(e) || !this.i && Fn(e).hasChildNodes()) throw new Yi("argument-error", "reCAPTCHA container is either not found or already contains inner elements!");
                         this.o = new Pa(t, o || null, r || null), this.v = i || function() {
                             return null
@@ -6409,7 +6409,7 @@
                         var e = this;
                         return this.f ? this.f : this.f = Yh(this, Yt().then(function() {
                             if (yi() && !si()) return ri();
-                            throw new Yi("operation-not-supported-in-this-environment", "RecaptchaVerifier is only supported in a browser HTTP/HTTPS environment.")
+                            throw new Yi("operation-not-supported-in-this-environment", "RecaptchaVerifier is only supported in a Browser HTTP/HTTPS environment.")
                         }).then(function() {
                             return e.m.g(e.v())
                         }).then(function(t) {

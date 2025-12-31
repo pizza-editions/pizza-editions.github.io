@@ -11294,7 +11294,7 @@
                             } catch (Qa) {}
                             r.loadXML(w);
                             w = r
-                        } else throw Error("Your browser does not support loading xml documents");
+                        } else throw Error("Your Browser does not support loading xml documents");
                         r = Sh(Gi);
                         var x;
                         if (x = w && w.documentElement)(x = w.documentElement) && "VAST" != !x.nodeName ? (x =

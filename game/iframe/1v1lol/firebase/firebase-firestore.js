@@ -5123,7 +5123,7 @@
                 this.onCommittedListeners = []
             }
             var rc, ic = "IndexedDbPersistence",
-                oc = "The current tab is not in the required state to perform this operation. It might be necessary to refresh the browser tab.",
+                oc = "The current tab is not in the required state to perform this operation. It might be necessary to refresh the Browser tab.",
                 ac = "Another tab has exclusive access to the persistence layer. To allow shared access, make sure to invoke `enablePersistence()` with `synchronizeTabs:true` in all tabs.",
                 sc = (t(uc, rc = ec), uc);
 
