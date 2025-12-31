@@ -1,17 +1,17 @@
-name: IndexNow Submit (After Pages Deploy)
+name: IndexNow Submit
 
 on:
   workflow_run:
-    workflows: ["pages-build-deployment"]
+    workflows: ["Deploy GitHub Pages"]
     types:
       - completed
 
 jobs:
-  indexnow:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+  notify:
     runs-on: ubuntu-latest
-
     steps:
+      - uses: actions/checkout@v3
+
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
@@ -20,50 +20,36 @@ jobs:
       - name: Install dependencies
         run: pip install requests lxml
 
-      - name: Submit Sitemap URLs to IndexNow
-        env:
-          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+      - name: Submit URLs from Sitemap to IndexNow
         run: |
           python - <<EOF
-          import os, time, requests, json
+          import requests, json
           from lxml import etree
 
-          KEY = os.getenv("INDEXNOW_KEY")
-          HOST = "pizza-editions.github.io"
-          KEY_URL = f"https://{HOST}/{KEY}.txt"
-          SITEMAP = f"https://{HOST}/sitemap.xml"
-          ENDPOINT = "https://api.indexnow.org/indexnow"
+          key = "5607a2f1e8694f6b888e9d1dbc53fc15"
+          sitemap_url = "https://pizza-editions.github.io/sitemap.xml"
 
-          # wait to avoid CDN delay
-          time.sleep(20)
+          r = requests.get(sitemap_url)
+          r.raise_for_status()
 
-          # verify key file
-          r = requests.head(KEY_URL, timeout=10)
-          if r.status_code != 200:
-              raise Exception("IndexNow key file still not reachable")
-
-          # fetch sitemap
-          res = requests.get(SITEMAP, timeout=20)
-          res.raise_for_status()
-
-          tree = etree.fromstring(res.content)
+          tree = etree.fromstring(r.content)
           ns = {"ns": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-          urls = [loc.text.strip() for loc in tree.xpath("//ns:loc", namespaces=ns)]
-
-          if not urls:
-              raise Exception("No URLs found in sitemap")
+          urls = [loc.text for loc in tree.xpath("//ns:loc", namespaces=ns)]
 
           payload = {
-              "host": HOST,
-              "key": KEY,
-              "keyLocation": KEY_URL,
-              "urlList": urls[:10000]
+              "host": "pizza-editions.github.io",
+              "key": key,
+              "keyLocation": f"https://pizza-editions.github.io/{key}.txt",
+              "urlList": urls
           }
 
-          headers = {"Content-Type": "application/json"}
-          resp = requests.post(ENDPOINT, headers=headers, data=json.dumps(payload))
+          resp = requests.post(
+              "https://api.indexnow.org/indexnow",
+              headers={"Content-Type": "application/json"},
+              data=json.dumps(payload)
+          )
 
-          print("URLs submitted:", len(payload["urlList"]))
+          print("Total URLs:", len(urls))
           print("Status:", resp.status_code)
-          print("Response:", resp.text)
+          print(resp.text)
           EOF
